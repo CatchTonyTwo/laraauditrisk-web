@@ -1,0 +1,71 @@
+---
+const {
+  title = 'Lara Audit Risk Advisory',
+  description = 'Auditoría interna, gobierno y riesgo. Evaluaciones externas de calidad, diagnósticos de brechas y programas de calidad basados en las Normas Globales 2024 del IIA.',
+  active = ''
+} = Astro.props;
+const on = (k) => (active === k ? 'active' : '');
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#082f31" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="logo" href="/"><span class="logo-seal"><span>L</span></span><span class="logo-vertical" aria-label="Audit Risk Advisory"><span class="logo-stack"><b>A</b><i>u</i><i>d</i><i>i</i><i>t</i></span><span class="logo-stack"><b>R</b><i>i</i><i>s</i><i>k</i></span><span class="logo-stack"><b>A</b><i>d</i><i>v</i><i>i</i><i>s</i><i>o</i><i>r</i><i>y</i></span></span></a>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="/" class={on('inicio')}><span data-lang="es">Inicio</span><span data-lang="en">Home</span></a></li>
+      <li class="nav-item has-mega">
+        <a href="/servicios" class={on('servicios')}><span data-lang="es">Servicios</span><span data-lang="en">Services</span> <span class="caret">▾</span></a>
+        <div class="mega"><div class="mega-inner">
+          <div class="mega-lead"><h4><span data-lang="es">Servicios</span><span data-lang="en">Services</span></h4><p><span data-lang="es">Seis formas concretas de trabajar la calidad de su función de auditoría.</span><span data-lang="en">Six concrete ways to work on your audit function's quality.</span></p><a href="/servicios"><span data-lang="es">Ver todos</span><span data-lang="en">See all</span></a></div>
+          <div class="mega-col"><h5><span data-lang="es">Aseguramiento</span><span data-lang="en">Assurance</span></h5><a href="/servicios"><span data-lang="es">Evaluación externa</span><span data-lang="en">External assessment</span></a><a href="/servicios"><span data-lang="es">Diagnóstico de brechas</span><span data-lang="en">Gap analysis</span></a><a href="/servicios">PAMC / QAIP</a></div>
+          <div class="mega-col"><h5><span data-lang="es">Talento</span><span data-lang="en">Talent</span></h5><a href="/servicios"><span data-lang="es">Banco de preguntas</span><span data-lang="en">Question bank</span></a><a href="/servicios"><span data-lang="es">Formación</span><span data-lang="en">Training</span></a></div>
+          <div class="mega-col"><h5><span data-lang="es">Regulatorio</span><span data-lang="en">Regulatory</span></h5><a href="/servicios">CE006/2025</a><a href="/nosotros#contacto"><span data-lang="es">A medida</span><span data-lang="en">Tailored</span></a></div>
+        </div></div>
+      </li>
+      <li class="nav-item has-mega">
+        <a href="/perspectivas" class={on('perspectivas')}><span data-lang="es">Perspectivas de auditoría interna</span><span data-lang="en">Internal Audit Perspectives</span> <span class="caret">▾</span></a>
+        <div class="mega"><div class="mega-inner">
+          <div class="mega-lead"><h4><span data-lang="es">Perspectivas</span><span data-lang="en">Perspectives</span></h4><p><span data-lang="es">Notas sobre las Normas 2024, la calidad y la regulación, sin relleno.</span><span data-lang="en">Notes on the 2024 Standards, quality and regulation, no filler.</span></p><a href="/perspectivas"><span data-lang="es">Ver todos</span><span data-lang="en">See all</span></a></div>
+          <div class="mega-col"><h5><span data-lang="es">Temas</span><span data-lang="en">Topics</span></h5><a href="/perspectivas"><span data-lang="es">Normas 2024</span><span data-lang="en">2024 Standards</span></a><a href="/perspectivas"><span data-lang="es">Calidad (PAMC)</span><span data-lang="en">Quality (QAIP)</span></a><a href="/perspectivas"><span data-lang="es">Evaluación externa</span><span data-lang="en">External assessment</span></a></div>
+          <div class="mega-col"><h5><span data-lang="es">Más</span><span data-lang="en">More</span></h5><a href="/perspectivas"><span data-lang="es">Regulación</span><span data-lang="en">Regulation</span></a><a href="/perspectivas"><span data-lang="es">Ética</span><span data-lang="en">Ethics</span></a><a href="/perspectivas"><span data-lang="es">Competencias</span><span data-lang="en">Competency</span></a></div>
+          <div class="mega-col"><h5><span data-lang="es">Leer primero</span><span data-lang="en">Start here</span></h5><a href="/perspectivas"><span data-lang="es">Guía del primer año</span><span data-lang="en">First-year guide</span></a></div>
+        </div></div>
+      </li>
+      <li class="nav-item"><a href="/herramientas" class={on('herramientas')}><span data-lang="es">Herramientas</span><span data-lang="en">Tools</span></a></li>
+      <li class="nav-item"><a href="/nosotros" class={on('nosotros')}><span data-lang="es">Nosotros</span><span data-lang="en">About</span></a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-toggle"><button data-set-lang="es" class="active">ES</button><button data-set-lang="en">EN</button></div>
+      <a class="btn-nav" href="/nosotros#contacto"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></a>
+      <button class="menu-toggle" aria-label="Menú">☰</button>
+    </div>
+  </div>
+</header>
+
+<slot />
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="logo" href="/"><span class="logo-seal"><span>L</span></span><span class="logo-vertical" aria-label="Audit Risk Advisory"><span class="logo-stack"><b>A</b><i>u</i><i>d</i><i>i</i><i>t</i></span><span class="logo-stack"><b>R</b><i>i</i><i>s</i><i>k</i></span><span class="logo-stack"><b>A</b><i>d</i><i>v</i><i>i</i><i>s</i><i>o</i><i>r</i><i>y</i></span></span></a><p><span data-lang="es">Auditoría interna, gobierno y riesgo. Bogotá, con clientes dentro y fuera de Colombia.</span><span data-lang="en">Internal audit, governance and risk. Based in Bogotá, with clients inside and outside Colombia.</span></p></div>
+      <div class="footer-col"><h4><span data-lang="es">Servicios</span><span data-lang="en">Services</span></h4><a href="/servicios"><span data-lang="es">Evaluación externa</span><span data-lang="en">External assessment</span></a><a href="/servicios"><span data-lang="es">Diagnóstico de brechas</span><span data-lang="en">Gap analysis</span></a><a href="/servicios">PAMC / QAIP</a><a href="/servicios"><span data-lang="es">Formación</span><span data-lang="en">Training</span></a></div>
+      <div class="footer-col"><h4><span data-lang="es">Firma</span><span data-lang="en">Firm</span></h4><a href="/nosotros"><span data-lang="es">Nosotros</span><span data-lang="en">About</span></a><a href="/perspectivas"><span data-lang="es">Perspectivas de auditoría interna</span><span data-lang="en">Internal Audit Perspectives</span></a><a href="/herramientas"><span data-lang="es">Herramientas</span><span data-lang="en">Tools</span></a><a href="/nosotros#contacto"><span data-lang="es">Contacto</span><span data-lang="en">Contact</span></a></div>
+      <div class="footer-col"><h4><span data-lang="es">Acreditaciones</span><span data-lang="en">Credentials</span></h4><a>CIA · CRMA · QAC</a><a>CCSA · COSO IC</a><a>IIA Global</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Lara Audit Risk Advisory</span><span><span data-lang="es">Bogotá, Colombia</span><span data-lang="en">Bogotá, Colombia</span></span></div>
+  </div>
+</footer>
+
+<script is:inline src="/assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+---
+import Base from '../layouts/Base.astro';
+const title = "Herramientas — Lara Audit Risk Advisory";
+const description = "Plantillas, guías y herramientas prácticas para fortalecer funciones de auditoría interna.";
+---
+<Base title={title} description={description} active="herramientas">
+
+<section class="page-hero tools-hero">
+  <div class="page-hero-inner">
+    <hr class="rule rule--light" data-reveal>
+    <span class="hero-eyebrow" data-reveal><span data-lang="es">Recursos aplicables</span><span data-lang="en">Ready-to-use resources</span></span>
+    <h1 data-reveal><span data-lang="es">Herramientas para llevar el criterio a la práctica.</span><span data-lang="en">Tools that turn sound judgment into practice.</span></h1>
+    <p data-reveal data-delay="1"><span data-lang="es">Plantillas, matrices y guías diseñadas desde la experiencia para ahorrar tiempo, ordenar la evidencia y fortalecer su función de auditoría.</span><span data-lang="en">Templates, matrices and guides designed from experience to save time, organize evidence and strengthen your audit function.</span></p>
+  </div>
+</section>
+
+<section class="section section--paper">
+  <div class="container">
+    <div class="catalog-heading" data-reveal>
+      <div>
+        <span class="eyebrow"><span data-lang="es">Biblioteca práctica</span><span data-lang="en">Practical library</span></span>
+        <h2><span data-lang="es">Empiece con lo que necesita hoy</span><span data-lang="en">Start with what you need today</span></h2>
+      </div>
+      <div class="tool-filters" role="group" aria-label="Filtrar herramientas">
+        <button class="active" data-filter="all"><span data-lang="es">Todas</span><span data-lang="en">All</span></button>
+        <button data-filter="free"><span data-lang="es">Gratuitas</span><span data-lang="en">Free</span></button>
+        <button data-filter="paid"><span data-lang="es">De pago</span><span data-lang="en">Paid</span></button>
+      </div>
+    </div>
+
+    <div class="tools-grid">
+      <article class="tool-card tool-card--featured" data-product="paid" data-reveal>
+        <div class="tool-visual"><span>01</span><i></i><i></i><i></i></div>
+        <div class="tool-content">
+          <div class="tool-meta"><span class="product-badge product-badge--paid"><span data-lang="es">De pago</span><span data-lang="en">Paid</span></span><span>Excel · PDF · ES/EN</span></div>
+          <h3><span data-lang="es">Matriz de diagnóstico de brechas — Normas 2024</span><span data-lang="en">2024 Standards gap assessment matrix</span></h3>
+          <p><span data-lang="es">Una estructura para evaluar su nivel actual, documentar evidencia y priorizar acciones frente a las Normas Globales.</span><span data-lang="en">A structure to assess your current state, document evidence and prioritize actions against the Global Standards.</span></p>
+          <div class="tool-price"><strong>USD 29</strong><span>COP 99.000</span></div>
+          <a class="tool-link" href="/herramientas/matriz-brechas"><span data-lang="es">Ver herramienta</span><span data-lang="en">View tool</span><b>→</b></a>
+        </div>
+      </article>
+
+      <article class="tool-card" data-product="free" data-reveal data-delay="1">
+        <div class="tool-visual tool-visual--small"><span>02</span><i></i><i></i></div>
+        <div class="tool-content">
+          <div class="tool-meta"><span class="product-badge product-badge--free"><span data-lang="es">Gratis</span><span data-lang="en">Free</span></span><span>PDF</span></div>
+          <h3><span data-lang="es">Checklist para una evaluación externa</span><span data-lang="en">External assessment readiness checklist</span></h3>
+          <p><span data-lang="es">Una revisión breve para saber qué evidencia tiene, qué falta y dónde conviene empezar.</span><span data-lang="en">A quick review to understand what evidence you have, what is missing and where to begin.</span></p>
+          <a class="tool-link" href="#descarga" data-free-download="Checklist para una evaluación externa"><span data-lang="es">Descargar gratis</span><span data-lang="en">Download free</span><b>↓</b></a>
+        </div>
+      </article>
+
+      <article class="tool-card" data-product="paid" data-reveal data-delay="2">
+        <div class="tool-visual tool-visual--small"><span>03</span><i></i><i></i></div>
+        <div class="tool-content">
+          <div class="tool-meta"><span class="product-badge product-badge--paid"><span data-lang="es">De pago</span><span data-lang="en">Paid</span></span><span>Word · Excel</span></div>
+          <h3><span data-lang="es">Kit para construir su PAMC / QAIP</span><span data-lang="en">QAIP development toolkit</span></h3>
+          <p><span data-lang="es">Plantillas editables para estructurar el programa, definir indicadores y presentar resultados al Comité.</span><span data-lang="en">Editable templates to structure the program, define indicators and report results to the Committee.</span></p>
+          <a class="tool-link" href="#"><span data-lang="es">Ver herramienta</span><span data-lang="en">View tool</span><b>→</b></a>
+        </div>
+      </article>
+
+      <article class="tool-card" data-product="free" data-reveal>
+        <div class="tool-visual tool-visual--small"><span>04</span><i></i><i></i></div>
+        <div class="tool-content">
+          <div class="tool-meta"><span class="product-badge product-badge--free"><span data-lang="es">Gratis</span><span data-lang="en">Free</span></span><span>PDF</span></div>
+          <h3><span data-lang="es">Guía de evidencias para el Comité</span><span data-lang="en">Evidence guide for the Audit Committee</span></h3>
+          <p><span data-lang="es">Una guía breve para presentar conclusiones trazables y facilitar conversaciones de calidad.</span><span data-lang="en">A concise guide for presenting traceable conclusions and enabling quality conversations.</span></p>
+          <a class="tool-link" href="#descarga" data-free-download="Guía de evidencias para el Comité"><span data-lang="es">Descargar gratis</span><span data-lang="en">Download free</span><b>↓</b></a>
+        </div>
+      </article>
+
+      <article class="tool-card" data-product="paid" data-reveal data-delay="1">
+        <div class="tool-visual tool-visual--small"><span>05</span><i></i><i></i></div>
+        <div class="tool-content">
+          <div class="tool-meta"><span class="product-badge product-badge--paid"><span data-lang="es">De pago</span><span data-lang="en">Paid</span></span><span>Excel</span></div>
+          <h3><span data-lang="es">Tablero de seguimiento de planes de acción</span><span data-lang="en">Action plan tracking dashboard</span></h3>
+          <p><span data-lang="es">Un tablero editable para responsables, fechas, avances, alertas y reportes ejecutivos.</span><span data-lang="en">An editable dashboard for owners, dates, progress, alerts and executive reporting.</span></p>
+          <a class="tool-link" href="#"><span data-lang="es">Ver herramienta</span><span data-lang="en">View tool</span><b>→</b></a>
+        </div>
+      </article>
+
+      <article class="tool-card" data-product="paid" data-reveal data-delay="2">
+        <div class="tool-visual tool-visual--small"><span>06</span><i></i><i></i></div>
+        <div class="tool-content">
+          <div class="tool-meta"><span class="product-badge product-badge--paid"><span data-lang="es">De pago</span><span data-lang="en">Paid</span></span><span>Excel · PPT</span></div>
+          <h3><span data-lang="es">Mapa anual de aseguramiento</span><span data-lang="en">Annual assurance map</span></h3>
+          <p><span data-lang="es">Una herramienta para visualizar cobertura, responsables y brechas de aseguramiento.</span><span data-lang="en">A tool to visualize coverage, ownership and assurance gaps.</span></p>
+          <a class="tool-link" href="#"><span data-lang="es">Ver herramienta</span><span data-lang="en">View tool</span><b>→</b></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream">
+  <div class="container">
+    <div class="editorial">
+      <div class="editorial-left" data-reveal>
+        <hr class="rule">
+        <h2><span data-lang="es">Una plantilla no reemplaza el criterio.</span><span data-lang="en">A template does not replace judgment.</span></h2>
+      </div>
+      <div class="editorial-right" data-reveal data-delay="1">
+        <p><span data-lang="es">Estas herramientas están pensadas para organizar el trabajo y acelerar decisiones, no para convertir la auditoría en un ejercicio mecánico. Cada recurso explica cuándo usarlo y qué adaptar a su organización.</span><span data-lang="en">These tools are designed to organize work and accelerate decisions, not turn audit into a mechanical exercise. Each resource explains when to use it and what to adapt to your organization.</span></p>
+        <a class="btn btn-navy" href="/nosotros#contacto"><span data-lang="es">Necesito algo a medida</span><span data-lang="en">I need something tailored</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</Base>

@@ -1,0 +1,43 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getArticles, getArticle } from '../../lib/sanity.js';
+import { toHTML } from '@portabletext/to-html';
+
+export async function getStaticPaths() {
+  const articles = await getArticles();
+  return articles.map((a) => ({ params: { slug: a.slug } }));
+}
+
+const { slug } = Astro.params;
+const a = await getArticle(slug);
+const bodyEs = a && a.bodyEs ? toHTML(a.bodyEs) : '';
+const bodyEn = a && a.bodyEn ? toHTML(a.bodyEn) : '';
+const dateStr = a && a.publishedAt
+  ? new Date(a.publishedAt).toLocaleDateString('es-CO', { year: 'numeric', month: 'long', day: 'numeric' })
+  : '';
+---
+<Base title={`${a ? a.titleEs : 'Artículo'} — Lara Audit Risk Advisory`} description={a ? a.excerptEs : ''} active="perspectivas">
+
+<article>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <hr class="rule rule--light" data-reveal>
+      <span class="la-tag" data-reveal style="color:var(--copper-400);"><span data-lang="es">{a.categoryEs}</span><span data-lang="en">{a.categoryEn}</span></span>
+      <h1 data-reveal data-delay="1" data-lang="es" class="block">{a.titleEs}</h1>
+      <h1 data-reveal data-delay="1" data-lang="en" class="block">{a.titleEn}</h1>
+      <p data-reveal data-delay="2" style="opacity:.75;font-size:.95rem;">{dateStr}</p>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="container" style="max-width:760px;">
+      <div class="article-body block" data-lang="es" set:html={bodyEs}></div>
+      <div class="article-body block" data-lang="en" set:html={bodyEn}></div>
+      <p style="margin-top:3rem;">
+        <a class="btn btn-line" href="/perspectivas"><span data-lang="es">← Volver a Perspectivas</span><span data-lang="en">← Back to Perspectives</span></a>
+      </p>
+    </div>
+  </section>
+</article>
+
+</Base>

@@ -1,0 +1,59 @@
+---
+import Base from '../layouts/Base.astro';
+import { getArticles } from '../lib/sanity.js';
+
+const articles = await getArticles();
+const lead = articles.find((a) => a.featured) || articles[0];
+const rest = articles.filter((a) => a.slug !== (lead && lead.slug));
+---
+<Base title="Perspectivas de auditoría interna — Lara Audit Risk Advisory" description="Notas sobre las Normas Globales 2024, la calidad de la auditoría interna y la regulación." active="perspectivas">
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <hr class="rule rule--light" data-reveal>
+    <h1 data-reveal><span data-lang="es">Perspectivas de auditoría interna</span><span data-lang="en">Internal Audit Perspectives</span></h1>
+    <p data-reveal data-delay="1"><span data-lang="es">Perspectivas que nacen del trabajo con funciones de auditoría interna, casi siempre porque un cliente me hizo la misma pregunta dos veces. Sobre las Normas 2024, la calidad y la regulación.</span><span data-lang="en">Perspectives drawn from working with internal audit functions, usually because a client asked me the same thing twice. On the 2024 Standards, quality and regulation.</span></p>
+  </div>
+</section>
+
+{lead && (
+  <section class="section section--paper">
+    <div class="container">
+      <div class="lead-article" data-reveal>
+        <div>
+          <span class="la-tag"><span data-lang="es">{lead.categoryEs}</span><span data-lang="en">{lead.categoryEn}</span></span>
+          <h2 data-lang="es" class="block">{lead.titleEs}</h2>
+          <h2 data-lang="en" class="block">{lead.titleEn}</h2>
+          <p data-lang="es" class="block">{lead.excerptEs}</p>
+          <p data-lang="en" class="block">{lead.excerptEn}</p>
+          <a class="btn btn-line" href={`/perspectivas/${lead.slug}`}><span data-lang="es">Leer la nota</span><span data-lang="en">Read it</span></a>
+        </div>
+        <aside class="la-aside">
+          <p data-lang="es" class="block">"Llegar a una evaluación con evidencia, no con buenas intenciones."</p>
+          <p data-lang="en" class="block">"Walk into an assessment with evidence, not good intentions."</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+)}
+
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow"><span data-lang="es">Todo lo demás</span><span data-lang="en">Everything else</span></span>
+      <h2 data-lang="es" class="block">Notas y guías</h2>
+      <h2 data-lang="en" class="block">Notes and guides</h2>
+    </div>
+    <div class="insight-list" data-reveal data-delay="1">
+      {rest.map((a) => (
+        <a class="insight-row" href={`/perspectivas/${a.slug}`}>
+          <span class="ir-tag"><span data-lang="es">{a.categoryEs}</span><span data-lang="en">{a.categoryEn}</span></span>
+          <span class="ir-title"><span data-lang="es">{a.titleEs}</span><span data-lang="en">{a.titleEn}</span></span>
+          <span class="ir-arrow">→</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
+
+</Base>
