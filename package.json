@@ -9,7 +9,9 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^5.6.1",
-    "@portabletext/to-html": "^2.0.13"
+    "@plasmicapp/cli": "^0.1.366",
+    "@plasmicapp/react-web": "^1.0.25",
+    "@portabletext/to-html": "^2.0.13",
+    "astro": "^5.6.1"
   }
 }
