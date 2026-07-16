@@ -1,0 +1,76 @@
+---
+const projectId = "e6ZxPuHCfPgHyJvfyLEMAD";
+const projectToken =
+  "AEEEULvRchRejD3IrYbCFiML5K9qRNLbfRDuA9O1q5jY75lquMQ9xzpKFh1dl6LMfIl0wurFvzuDjEg7U8wQ";
+const componentName = "Homepage";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Prueba Plasmic — Lara Audit Risk Advisory</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+      }
+
+      #plasmic-status {
+        padding: 2rem;
+        font: 16px/1.5 system-ui, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="plasmic-root" aria-live="polite">
+      <p id="plasmic-status">Cargando la versión publicada de Plasmic…</p>
+    </main>
+
+    <noscript>Esta página de prueba necesita JavaScript.</noscript>
+
+    <script is:inline define:vars={{ projectId, projectToken, componentName }}>
+      (async () => {
+        const root = document.getElementById("plasmic-root");
+        const endpoint =
+          "https://codegen.plasmic.app/api/v1/loader/html/published/" +
+          encodeURIComponent(projectId) +
+          "/" +
+          encodeURIComponent(componentName) +
+          "?hydrate=1&embedHydrate=1";
+
+        try {
+          const response = await fetch(endpoint, {
+            headers: {
+              "x-plasmic-api-project-tokens":
+                projectId + ":" + projectToken,
+            },
+          });
+
+          if (!response.ok) {
+            throw new Error("Plasmic respondió " + response.status);
+          }
+
+          const result = await response.json();
+          root.innerHTML = result.html;
+
+          if (window.__plasmicHydrater) {
+            window.__plasmicHydrater.hydrateAll();
+          } else {
+            const script = document.createElement("script");
+            script.src =
+              "https://codegen.plasmic.app/static/js/loader-hydrate.js";
+            document.body.appendChild(script);
+          }
+        } catch (error) {
+          root.innerHTML =
+            '<p id="plasmic-status">No se pudo cargar la prueba de Plasmic.</p>';
+          console.error(error);
+        }
+      })();
+    </script>
+  </body>
+</html>
