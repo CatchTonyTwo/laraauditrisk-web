@@ -1,0 +1,78 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "js",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "inlined",
+    "publicDir": "../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "e6ZxPuHCfPgHyJvfyLEMAD",
+      "projectApiToken": "AEEEULvRchRejD3IrYbCFiML5K9qRNLbfRDuA9O1q5jY75lquMQ9xzpKFh1dl6LMfIl0wurFvzuDjEg7U8wQ",
+      "projectName": "LARA website",
+      "version": "latest",
+      "cssFilePath": "plasmic/lara_website/plasmic.css",
+      "components": [
+        {
+          "id": "4BghuWbxEHcl",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "e6ZxPuHCfPgHyJvfyLEMAD",
+          "renderModuleFilePath": "plasmic/lara_website/PlasmicHomepage.jsx",
+          "importSpec": {
+            "modulePath": "Homepage.jsx"
+          },
+          "cssFilePath": "plasmic/lara_website/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/"
+        }
+      ],
+      "icons": [],
+      "images": [],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "styleTokensProviderFilePath": "plasmic/lara_website/PlasmicStyleTokensProvider.jsx",
+      "dataTokensFilePath": "",
+      "projectModuleFilePath": "plasmic/lara_website/plasmic.jsx",
+      "codeComponents": [
+        {
+          "id": "1JTLRm8ZmC0x",
+          "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "MOuHTcqTA8zM",
+          "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ],
+      "customFunctions": []
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": []
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "preserveJsImportExtensions": false,
+  "cliVersion": "0.1.366",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.366/dist/plasmic.schema.json"
+}
