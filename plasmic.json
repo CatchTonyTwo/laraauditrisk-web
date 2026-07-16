@@ -69,7 +69,20 @@
     }
   ],
   "globalVariants": {
-    "variantGroups": []
+    "variantGroups": [
+      {
+        "id": "n2MWL_GAJYZj",
+        "name": "Screen",
+        "projectId": "e6ZxPuHCfPgHyJvfyLEMAD",
+        "contextFilePath": "plasmic/lara_website/PlasmicGlobalVariant__Screen.jsx"
+      },
+      {
+        "id": "uH-Kq1IL8lzA",
+        "name": "Locale",
+        "projectId": "e6ZxPuHCfPgHyJvfyLEMAD",
+        "contextFilePath": "plasmic/lara_website/PlasmicGlobalVariant__Locale.jsx"
+      }
+    ]
   },
   "wrapPagesWithGlobalContexts": true,
   "preserveJsImportExtensions": false,

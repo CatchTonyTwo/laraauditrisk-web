@@ -10,11 +10,15 @@
 // Component: 4BghuWbxEHcl
 import * as React from "react";
 import {
+  PlasmicLink as PlasmicLink__,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  hasVariant,
+  useTrigger
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
+import { _useGlobalVariants } from "./plasmic"; // plasmic-import: e6ZxPuHCfPgHyJvfyLEMAD/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: e6ZxPuHCfPgHyJvfyLEMAD/styleTokensProvider
 import "@plasmicapp/react-web/lib/plasmic.css";
 import "./plasmic.css"; // plasmic-import: e6ZxPuHCfPgHyJvfyLEMAD/projectcss
@@ -37,9 +41,13 @@ function wrapQueriesWithLoadingProxy($q) {
 
 export function generateDynamicMetadata($q, $ctx) {
   return {
-    openGraph: {},
+    title: "Lara Audit Risk Advisory — Auditoría interna, gobierno y riesgo",
+    openGraph: {
+      title: "Lara Audit Risk Advisory — Auditoría interna, gobierno y riesgo"
+    },
     twitter: {
-      card: "summary"
+      card: "summary",
+      title: "Lara Audit Risk Advisory — Auditoría interna, gobierno y riesgo"
     }
   };
 }
@@ -71,6 +79,24 @@ function PlasmicHomepage__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
+  const globalVariants = _useGlobalVariants();
+  const [isN113141082Hover, triggerN113141082HoverProps] = useTrigger(
+    "useHover",
+    {}
+  );
+  const [isN113141083Hover, triggerN113141083HoverProps] = useTrigger(
+    "useHover",
+    {}
+  );
+  const [isN113141084Hover, triggerN113141084HoverProps] = useTrigger(
+    "useHover",
+    {}
+  );
+  const triggers = {
+    hover_113141082: isN113141082Hover,
+    hover_113141083: isN113141083Hover,
+    hover_113141084: isN113141084Hover
+  };
   const styleTokensClassNames = _useStyleTokens();
   return (
     <React.Fragment>
@@ -88,14 +114,3368 @@ function PlasmicHomepage__RenderFunc(props) {
             styleTokensClassNames,
             sty.root
           )}
-        />
+        >
+          <div
+            className={classNames("all", sty.freeBox__hdqA)}
+            style={
+              hasVariant(globalVariants, "screen", "mobile")
+                ? { webkitFontSmoothing: "antialiased" }
+                : { webkitFontSmoothing: "antialiased" }
+            }
+          >
+            <div
+              {...{ "arial,": "" }}
+              className={classNames("all", sty.freeBox__gu0C0)}
+              dm={""}
+              {...{ 'sans",': "" }}
+              {...{ 'sans-serif;font-size:17px;line-height:28.05px;"': "" }}
+            >
+              <header
+                data-plasmic-name={"header"}
+                data-plasmic-override={overrides.header}
+                className={classNames("all", sty.header)}
+                style={
+                  hasVariant(globalVariants, "screen", "tabletOrSmaller")
+                    ? { backdropFilter: "blur(16px)" }
+                    : { backdropFilter: "blur(16px)" }
+                }
+              >
+                <div
+                  className={classNames("all", sty.freeBox__rVjv)}
+                  style={
+                    hasVariant(globalVariants, "screen", "tabletOrSmaller")
+                      ? { marginInline: "auto" }
+                      : { marginInline: "auto" }
+                  }
+                >
+                  <PlasmicLink__
+                    className={classNames(
+                      "all",
+                      "a",
+                      "a__e6ZxP",
+                      sty.link__wZbTr
+                    )}
+                    href={"/"}
+                    platform={"react"}
+                  >
+                    <span
+                      className={classNames(
+                        "all",
+                        "span",
+                        "span__e6ZxP",
+                        sty.span__uuUmJ
+                      )}
+                      style={{ placeItems: "center" }}
+                    >
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__mn31A
+                        )}
+                        style={{
+                          font: '600 1.45rem/1"Playfair Display",Georgia,serif'
+                        }}
+                      >
+                        {"L"}
+                      </span>
+                    </span>
+                    <span
+                      aria-label={"Audit Risk Advisory"}
+                      className={classNames(
+                        "all",
+                        "span",
+                        "span__e6ZxP",
+                        sty.span___2FgVd
+                      )}
+                    >
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          sty.span__tYcNp
+                        )}
+                      >
+                        <div
+                          className={classNames("all", sty.freeBox__r9T44)}
+                          style={{
+                            font: '700 .68rem/.68rem"Manrope",Arial,sans-serif'
+                          }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span___9O8Js
+                            )}
+                          >
+                            {"A"}
+                          </span>
+                        </div>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i__tSDx7
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span__y8L1T
+                            )}
+                          >
+                            {"u"}
+                          </span>
+                        </i>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i__teDuP
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span___7M92D
+                            )}
+                          >
+                            {"d"}
+                          </span>
+                        </i>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i__mImO
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span___2Nzeg
+                            )}
+                          >
+                            {"i"}
+                          </span>
+                        </i>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i___1VhTo
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span__cnkx7
+                            )}
+                          >
+                            {"t"}
+                          </span>
+                        </i>
+                      </span>
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          sty.span___9Hnor
+                        )}
+                      >
+                        <div
+                          className={classNames("all", sty.freeBox___58JHq)}
+                          style={{
+                            font: '700 .68rem/.68rem"Manrope",Arial,sans-serif'
+                          }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span__gw5Uq
+                            )}
+                          >
+                            {"R"}
+                          </span>
+                        </div>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i__alz7G
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span__xOixl
+                            )}
+                          >
+                            {"i"}
+                          </span>
+                        </i>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i__vkW6
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span___0Qm8O
+                            )}
+                          >
+                            {"s"}
+                          </span>
+                        </i>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i__wv1Aq
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span___2Z0R2
+                            )}
+                          >
+                            {"k"}
+                          </span>
+                        </i>
+                      </span>
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          sty.span__tixAo
+                        )}
+                      >
+                        <div
+                          className={classNames("all", sty.freeBox__zViz0)}
+                          style={{
+                            font: '700 .68rem/.68rem"Manrope",Arial,sans-serif'
+                          }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span__pw2Lp
+                            )}
+                          >
+                            {"A"}
+                          </span>
+                        </div>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i__njXa
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span__kxQyq
+                            )}
+                          >
+                            {"d"}
+                          </span>
+                        </i>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i___1DfPk
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span___96I
+                            )}
+                          >
+                            {"v"}
+                          </span>
+                        </i>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i__zbX
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span__wb3Fu
+                            )}
+                          >
+                            {"i"}
+                          </span>
+                        </i>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i___6Zsjn
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span__gDt
+                            )}
+                          >
+                            {"s"}
+                          </span>
+                        </i>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i__kthyc
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span__j2RYm
+                            )}
+                          >
+                            {"o"}
+                          </span>
+                        </i>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i__p3Oj9
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span__lfJt
+                            )}
+                          >
+                            {"r"}
+                          </span>
+                        </i>
+                        <i
+                          className={classNames(
+                            "all",
+                            "i",
+                            "i__e6ZxP",
+                            sty.i__jgBz0
+                          )}
+                          style={{ fontStyle: "normal" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span__llvYr
+                            )}
+                          >
+                            {"y"}
+                          </span>
+                        </i>
+                      </span>
+                    </span>
+                  </PlasmicLink__>
+                  <div className={classNames("all", sty.freeBox__xX6X7)}>
+                    <div className={classNames("all", sty.freeBox__xMkBa)}>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__bb9Ir
+                        )}
+                        href={"/"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__yh4Kj,
+                            {
+                              [sty.spanglobal_locale_en__yh4KjShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Home"
+                            : "Inicio"}
+                        </span>
+                      </PlasmicLink__>
+                    </div>
+                    <div className={classNames("all", sty.freeBox__ad5CF)}>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__hy3A
+                        )}
+                        href={"/servicios"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span___9Ce8,
+                            {
+                              [sty.spanglobal_locale_en___9Ce8ShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Services"
+                            : "Servicios"}
+                        </span>
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__amQ6G
+                          )}
+                        >
+                          {"\u25be"}
+                        </span>
+                      </PlasmicLink__>
+                      <div className={classNames("all", sty.freeBox___6CoVh)}>
+                        <div
+                          className={classNames("all", sty.freeBox__yitSs)}
+                          style={{ gridTemplateColumns: "1.4fr repeat(3,1fr)" }}
+                        >
+                          <div
+                            className={classNames("all", sty.freeBox__u1Fa6)}
+                          >
+                            <h4
+                              className={classNames(
+                                "all",
+                                "h4",
+                                "h4__e6ZxP",
+                                "__wab_text",
+                                sty.h4__tNbaC
+                              )}
+                            >
+                              {"Servicios"}
+                            </h4>
+                            <p
+                              className={classNames(
+                                "all",
+                                "p",
+                                "p__e6ZxP",
+                                "__wab_text",
+                                sty.p___0Tt6U
+                              )}
+                            >
+                              {
+                                "Seis formas concretas de trabajar la calidad de su funci\u00f3n de auditor\u00eda."
+                              }
+                            </p>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link__mQaDw
+                              )}
+                              href={"/servicios"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__zlwzR
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"Ver todos"}
+                              </span>
+                            </PlasmicLink__>
+                          </div>
+                          <div
+                            className={classNames("all", sty.freeBox__wWChK)}
+                          >
+                            <h5
+                              className={classNames(
+                                "all",
+                                "h5",
+                                "h5__e6ZxP",
+                                "__wab_text",
+                                sty.h5__ynAla
+                              )}
+                            >
+                              {"Aseguramiento"}
+                            </h5>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link___7Gg5W
+                              )}
+                              href={"/servicios"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__iep7U
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"Evaluaci\u00f3n externa"}
+                              </span>
+                            </PlasmicLink__>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link__opwJ4
+                              )}
+                              href={"/servicios"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__zea8T
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"Diagn\u00f3stico de brechas"}
+                              </span>
+                            </PlasmicLink__>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link__j7JO
+                              )}
+                              href={"/servicios"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__jAk1Z
+                                )}
+                              >
+                                {"PAMC / QAIP"}
+                              </span>
+                            </PlasmicLink__>
+                          </div>
+                          <div
+                            className={classNames("all", sty.freeBox__hiHIu)}
+                          >
+                            <h5
+                              className={classNames(
+                                "all",
+                                "h5",
+                                "h5__e6ZxP",
+                                "__wab_text",
+                                sty.h5__eyQyJ
+                              )}
+                            >
+                              {"Talento"}
+                            </h5>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link__sHmNm
+                              )}
+                              href={"/servicios"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__zU3N
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"Banco de preguntas"}
+                              </span>
+                            </PlasmicLink__>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link__wiVnj
+                              )}
+                              href={"/servicios"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__giG2Q
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"Formaci\u00f3n"}
+                              </span>
+                            </PlasmicLink__>
+                          </div>
+                          <div
+                            className={classNames("all", sty.freeBox__q0Ytx)}
+                          >
+                            <h5
+                              className={classNames(
+                                "all",
+                                "h5",
+                                "h5__e6ZxP",
+                                "__wab_text",
+                                sty.h5__rifb
+                              )}
+                            >
+                              {"Regulatorio"}
+                            </h5>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link__njtCe
+                              )}
+                              href={"/servicios"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__usNuj
+                                )}
+                              >
+                                {"CE006/2025"}
+                              </span>
+                            </PlasmicLink__>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link___5DmfI
+                              )}
+                              href={"/nosotros#contacto"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__xObPv
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"A medida"}
+                              </span>
+                            </PlasmicLink__>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className={classNames("all", sty.freeBox__zrW)}>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__mv4Wx
+                        )}
+                        href={"/perspectivas"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__a4M6,
+                            {
+                              [sty.spanglobal_locale_en__a4M6ShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Internal Audit Perspectives"
+                            : "Perspectivas de auditor\u00eda interna"}
+                        </span>
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__gOqp
+                          )}
+                        >
+                          {"\u25be"}
+                        </span>
+                      </PlasmicLink__>
+                      <div className={classNames("all", sty.freeBox__n3TdP)}>
+                        <div
+                          className={classNames("all", sty.freeBox__l4PGw)}
+                          style={{ gridTemplateColumns: "1.4fr repeat(3,1fr)" }}
+                        >
+                          <div
+                            className={classNames("all", sty.freeBox___7LDx6)}
+                          >
+                            <h4
+                              className={classNames(
+                                "all",
+                                "h4",
+                                "h4__e6ZxP",
+                                "__wab_text",
+                                sty.h4__ey4B
+                              )}
+                            >
+                              {"Perspectivas"}
+                            </h4>
+                            <p
+                              className={classNames(
+                                "all",
+                                "p",
+                                "p__e6ZxP",
+                                "__wab_text",
+                                sty.p__ouQ7J
+                              )}
+                            >
+                              {
+                                "Notas sobre las Normas 2024, la calidad y la regulaci\u00f3n, sin relleno."
+                              }
+                            </p>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link__ahYc
+                              )}
+                              href={"/perspectivas"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__r121Z
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"Ver todos"}
+                              </span>
+                            </PlasmicLink__>
+                          </div>
+                          <div
+                            className={classNames("all", sty.freeBox__i3Juw)}
+                          >
+                            <h5
+                              className={classNames(
+                                "all",
+                                "h5",
+                                "h5__e6ZxP",
+                                "__wab_text",
+                                sty.h5__mbI3P
+                              )}
+                            >
+                              {"Temas"}
+                            </h5>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link__w6Qvd
+                              )}
+                              href={"/perspectivas"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__zUzzA
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"Normas 2024"}
+                              </span>
+                            </PlasmicLink__>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link__nacaw
+                              )}
+                              href={"/perspectivas"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__ijr1
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"Calidad (PAMC)"}
+                              </span>
+                            </PlasmicLink__>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link___5Ry9
+                              )}
+                              href={"/perspectivas"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span___7KN
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"Evaluaci\u00f3n externa"}
+                              </span>
+                            </PlasmicLink__>
+                          </div>
+                          <div
+                            className={classNames("all", sty.freeBox__us374)}
+                          >
+                            <h5
+                              className={classNames(
+                                "all",
+                                "h5",
+                                "h5__e6ZxP",
+                                "__wab_text",
+                                sty.h5__rbNzq
+                              )}
+                            >
+                              {"M\u00e1s"}
+                            </h5>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link__i8Pp8
+                              )}
+                              href={"/perspectivas"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__v98O0
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"Regulaci\u00f3n"}
+                              </span>
+                            </PlasmicLink__>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link__ynknS
+                              )}
+                              href={"/perspectivas"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__yRsT2
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"\u00c9tica"}
+                              </span>
+                            </PlasmicLink__>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link__ov5R
+                              )}
+                              href={"/perspectivas"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__qw0G
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"Competencias"}
+                              </span>
+                            </PlasmicLink__>
+                          </div>
+                          <div
+                            className={classNames("all", sty.freeBox___7KYrm)}
+                          >
+                            <h5
+                              className={classNames(
+                                "all",
+                                "h5",
+                                "h5__e6ZxP",
+                                "__wab_text",
+                                sty.h5__jlOTf
+                              )}
+                            >
+                              {"Leer primero"}
+                            </h5>
+                            <PlasmicLink__
+                              className={classNames(
+                                "all",
+                                "a",
+                                "a__e6ZxP",
+                                sty.link___3Lf9Q
+                              )}
+                              href={"/perspectivas"}
+                              platform={"react"}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__fXmgb
+                                )}
+                                data-lang={"es"}
+                              >
+                                {"Gu\u00eda del primer a\u00f1o"}
+                              </span>
+                            </PlasmicLink__>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className={classNames("all", sty.freeBox__qEjtD)}>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__ktdQ
+                        )}
+                        href={"/herramientas"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__oBpm,
+                            {
+                              [sty.spanglobal_locale_en__oBpmShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Tools"
+                            : "Herramientas"}
+                        </span>
+                      </PlasmicLink__>
+                    </div>
+                    <div className={classNames("all", sty.freeBox___3Zf5R)}>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__kbTA
+                        )}
+                        href={"/nosotros"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span___0AzSp,
+                            {
+                              [sty.spanglobal_locale_en___0AzSpShDm]:
+                                hasVariant(globalVariants, "locale", "en")
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "About"
+                            : "Nosotros"}
+                        </span>
+                      </PlasmicLink__>
+                    </div>
+                  </div>
+                  <div className={classNames("all", sty.freeBox__w3J9)}>
+                    <div className={classNames("all", sty.freeBox__tfRcR)}>
+                      <button
+                        aria-pressed={"true"}
+                        className={classNames(
+                          "all",
+                          "button",
+                          "button__e6ZxP",
+                          sty.button__mOqDp
+                        )}
+                        data-set-lang={"es"}
+                        style={{ font: "inherit" }}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__oTd17
+                          )}
+                        >
+                          {"ES"}
+                        </span>
+                      </button>
+                      <button
+                        aria-pressed={"false"}
+                        className={classNames(
+                          "all",
+                          "button",
+                          "button__e6ZxP",
+                          sty.button__xKd0Q
+                        )}
+                        data-set-lang={"en"}
+                        style={{ font: "inherit" }}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__dzFxX
+                          )}
+                        >
+                          {"EN"}
+                        </span>
+                      </button>
+                    </div>
+                    <PlasmicLink__
+                      className={classNames(
+                        "all",
+                        "a",
+                        "a__e6ZxP",
+                        sty.link__vOr2M
+                      )}
+                      href={"/nosotros#contacto"}
+                      platform={"react"}
+                    >
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span___6AfnA,
+                          {
+                            [sty.spanglobal_locale_en___6AfnAShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        data-lang={"es"}
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "Contact"
+                          : "Contacto"}
+                      </span>
+                    </PlasmicLink__>
+                    <button
+                      aria-expanded={"false"}
+                      aria-label={"Men\u00fa"}
+                      className={classNames(
+                        "all",
+                        "button",
+                        "button__e6ZxP",
+                        sty.button__pbJ3
+                      )}
+                      style={
+                        hasVariant(globalVariants, "screen", "tabletOrSmaller")
+                          ? { font: "inherit" }
+                          : { font: "inherit" }
+                      }
+                    >
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__ppiFx
+                        )}
+                      >
+                        {"\u2630"}
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </header>
+              <section className={classNames("all", sty.section__okJHl)}>
+                <div
+                  className={classNames("all", sty.freeBox__fuUKy)}
+                  style={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? { gridTemplateColumns: "minmax(0px,1fr) 280px" }
+                      : hasVariant(globalVariants, "screen", "tabletOrSmaller")
+                        ? { gridTemplateColumns: "1fr" }
+                        : { gridTemplateColumns: "minmax(0px,1fr) 280px" }
+                  }
+                >
+                  <div className={classNames("all", sty.freeBox___2PfzO)}>
+                    <span
+                      className={classNames(
+                        "all",
+                        "span",
+                        "span__e6ZxP",
+                        "__wab_text",
+                        sty.span___2Ftj,
+                        {
+                          [sty.spanglobal_locale_en___2FtjShDm]: hasVariant(
+                            globalVariants,
+                            "locale",
+                            "en"
+                          )
+                        }
+                      )}
+                      data-reveal={""}
+                    >
+                      {hasVariant(globalVariants, "locale", "en")
+                        ? "Internal audit \u00b7 Governance \u00b7 Risk"
+                        : "Auditor\u00eda interna \u00b7 Gobierno ORGANIZACIONAL \u00b7 GESTI\u00d3N DE RiesgoS"}
+                    </span>
+                    <div
+                      className={classNames("all", sty.freeBox__b4R0H)}
+                      data-lang={"es"}
+                    >
+                      <h1
+                        data-plasmic-name={"h1"}
+                        data-plasmic-override={overrides.h1}
+                        className={classNames(
+                          "all",
+                          "h1",
+                          "h1__e6ZxP",
+                          "__wab_text",
+                          sty.h1,
+                          {
+                            [sty.h1global_locale_en]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        data-delay={"1"}
+                        data-reveal={""}
+                        style={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? { transitionDelay: "0.08s" }
+                            : { transitionDelay: "0.08s" }
+                        }
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "An audit function your Committee can stand behind."
+                          : "Una funci\u00f3n de auditor\u00eda que el Comit\u00e9 puede defender."}
+                      </h1>
+                      <p
+                        className={classNames(
+                          "all",
+                          "p",
+                          "p__e6ZxP",
+                          "__wab_text",
+                          sty.p__pjaVq,
+                          {
+                            [sty.pglobal_locale_en__pjaVqShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        data-delay={"2"}
+                        data-reveal={""}
+                        style={{ transitionDelay: "0.16s" }}
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "I help Chief Audit Executives close gaps against the 2024 Global Standards, build their quality program and walk into an external assessment without surprises. 25 years doing this work."
+                          : "Ayudo a Directores Ejecutivos de Auditor\u00eda a cerrar brechas frente a las Normas Globales 2024, armar su programa de calidad y llegar a una evaluaci\u00f3n externa sin sorpresas. 25 a\u00f1os haciendo este trabajo."}
+                      </p>
+                    </div>
+                    <div
+                      className={classNames("all", sty.freeBox__aLz7Y)}
+                      data-delay={"3"}
+                      data-reveal={""}
+                      style={{ transitionDelay: "0.24s" }}
+                    >
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__jBx6
+                        )}
+                        href={"/servicios"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__h40Gi,
+                            {
+                              [sty.spanglobal_locale_en__h40GiShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "View services"
+                            : "Ver servicios"}
+                        </span>
+                      </PlasmicLink__>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__qVpFp
+                        )}
+                        href={"/nosotros#contacto"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__blqe9,
+                            {
+                              [sty.spanglobal_locale_en__blqe9ShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Get in touch"
+                            : "Hablemos"}
+                        </span>
+                      </PlasmicLink__>
+                    </div>
+                  </div>
+                  <aside
+                    data-plasmic-name={"aside"}
+                    data-plasmic-override={overrides.aside}
+                    className={classNames("all", sty.aside)}
+                    data-delay={"2"}
+                    data-reveal={""}
+                    style={
+                      hasVariant(globalVariants, "screen", "mobile")
+                        ? {
+                            transitionDelay: "0.16s",
+                            gridTemplateColumns: "90px 1fr"
+                          }
+                        : hasVariant(
+                              globalVariants,
+                              "screen",
+                              "tabletOrSmaller"
+                            )
+                          ? {
+                              transitionDelay: "0.16s",
+                              gridTemplateColumns: "115px 1fr 115px 1fr"
+                            }
+                          : { transitionDelay: "0.16s" }
+                    }
+                  >
+                    <div
+                      className={classNames("all", sty.freeBox__phsHw)}
+                      style={
+                        hasVariant(globalVariants, "screen", "tabletOrSmaller")
+                          ? {
+                              font: '500 3.8rem/1"Playfair Display",Georgia,serif'
+                            }
+                          : {
+                              font: '500 3.8rem/1"Playfair Display",Georgia,serif'
+                            }
+                      }
+                    >
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__ae4PM
+                        )}
+                      >
+                        {"2024"}
+                      </span>
+                    </div>
+                    <div className={classNames("all", sty.freeBox__rR1DO)}>
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__hI35N,
+                          {
+                            [sty.spanglobal_locale_en__hI35NShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        data-lang={"es"}
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "The Global Standards that changed the rules."
+                          : "Las Normas Globales que cambiaron la regla del juego."}
+                      </span>
+                    </div>
+                    <div
+                      className={classNames("all", sty.freeBox__hniAi)}
+                      style={
+                        hasVariant(globalVariants, "screen", "tabletOrSmaller")
+                          ? {
+                              font: '500 3.8rem/1"Playfair Display",Georgia,serif'
+                            }
+                          : {
+                              font: '500 3.8rem/1"Playfair Display",Georgia,serif'
+                            }
+                      }
+                    >
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__tdsHw
+                        )}
+                      >
+                        {"5"}
+                      </span>
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__gCoR,
+                          {
+                            [sty.spanglobal_locale_en__gCoRShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "years"
+                          : "a\u00f1os"}
+                      </span>
+                    </div>
+                    <div className={classNames("all", sty.freeBox__frJu3)}>
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span___3OIGs,
+                          {
+                            [sty.spanglobal_locale_en___3OIGsShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        data-lang={"es"}
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "The maximum gap between external assessments."
+                          : "El plazo m\u00e1ximo entre evaluaciones externas."}
+                      </span>
+                    </div>
+                  </aside>
+                </div>
+              </section>
+              <section className={classNames("all", sty.section__uwoh)}>
+                <div
+                  className={classNames("all", sty.freeBox__r4BMs)}
+                  style={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? { marginInline: "auto" }
+                      : { marginInline: "auto" }
+                  }
+                >
+                  <div
+                    className={classNames("all", sty.freeBox___5U1Ed)}
+                    style={
+                      hasVariant(globalVariants, "screen", "mobile")
+                        ? { gridTemplateColumns: "1fr" }
+                        : { gridTemplateColumns: "0.86fr 1.14fr" }
+                    }
+                  >
+                    <div
+                      className={classNames("all", sty.freeBox__okRl)}
+                      data-reveal={""}
+                    >
+                      <div className={classNames("all", sty.freeBox__aTnjC)} />
+                      <h2
+                        className={classNames(
+                          "all",
+                          "h2",
+                          "h2__e6ZxP",
+                          sty.h2__jNSg
+                        )}
+                        data-lang={"es"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__yUqCb,
+                            {
+                              [sty.spanglobal_locale_en__yUqCbShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "What the 2024 Standards changed"
+                            : "Qu\u00e9 cambi\u00f3 con las Normas 2024"}
+                        </span>
+                      </h2>
+                    </div>
+                    <div
+                      className={classNames("all", sty.freeBox__it8KH)}
+                      data-delay={"1"}
+                      data-reveal={""}
+                      style={{ transitionDelay: "0.08s" }}
+                    >
+                      <div
+                        className={classNames("all", sty.freeBox___82VXv)}
+                        data-lang={"es"}
+                      >
+                        <p
+                          className={classNames(
+                            "all",
+                            "p",
+                            "p__e6ZxP",
+                            "__wab_text",
+                            sty.p__ik2Bg,
+                            {
+                              [sty.pglobal_locale_en__ik2BgShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "The old framework is gone. The 2024 Global Standards ask for more on quality assurance, independence and evidence. For a lot of teams that means rethinking how they document their work, not just tweaking a couple of papers."
+                            : "El marco anterior qued\u00f3 atr\u00e1s. Las Normas Globales 2024 piden m\u00e1s en aseguramiento de la calidad, independencia y evidencia. Para muchos equipos eso significa rehacer c\u00f3mo documentan su trabajo, no solo ajustar un par de papeles."}
+                        </p>
+                        <p
+                          className={classNames(
+                            "all",
+                            "p",
+                            "p__e6ZxP",
+                            "__wab_text",
+                            sty.p__bZhlU,
+                            {
+                              [sty.pglobal_locale_en__bZhlUShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "That's where I come in. I look at where your function stands today, tell you plainly what's missing and leave you a plan your Audit Committee can read and back. No shortcuts, and no reports that end up in a drawer."
+                            : "Ah\u00ed es donde entro. Reviso d\u00f3nde est\u00e1 su funci\u00f3n hoy, le digo con claridad qu\u00e9 falta y le dejo un plan que su Comit\u00e9 de Auditor\u00eda pueda leer y respaldar. Sin atajos y sin informes que terminan en un caj\u00f3n."}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section className={classNames("all", sty.section__gptU1)}>
+                <div
+                  className={classNames("all", sty.freeBox__vsWbE)}
+                  style={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? { marginInline: "auto" }
+                      : { marginInline: "auto" }
+                  }
+                >
+                  <div
+                    className={classNames("all", sty.freeBox__pcdF)}
+                    data-reveal={""}
+                  >
+                    <span
+                      className={classNames(
+                        "all",
+                        "span",
+                        "span__e6ZxP",
+                        "__wab_text",
+                        sty.span__n9ByV,
+                        {
+                          [sty.spanglobal_locale_en__n9ByVShDm]: hasVariant(
+                            globalVariants,
+                            "locale",
+                            "en"
+                          )
+                        }
+                      )}
+                    >
+                      {hasVariant(globalVariants, "locale", "en")
+                        ? "In numbers"
+                        : "En n\u00fameros"}
+                    </span>
+                    <h2
+                      className={classNames(
+                        "all",
+                        "h2",
+                        "h2__e6ZxP",
+                        sty.h2__d02J
+                      )}
+                      data-lang={"es"}
+                    >
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__hiSd,
+                          {
+                            [sty.spanglobal_locale_en__hiSdShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            ),
+                            [sty.spanglobal_locale_es__hiSdYbUtU]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "es"
+                            )
+                          }
+                        )}
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "A practice, not a template"
+                          : hasVariant(globalVariants, "locale", "es")
+                            ? "Una pr\u00e1ctica, no una plantilla"
+                            : "Una pr\u00e1ctica, no una plantilla \u2014 PRUEBA PLASMIC"}
+                      </span>
+                    </h2>
+                  </div>
+                  <div
+                    className={classNames("all", sty.freeBox__nCtoK)}
+                    style={
+                      hasVariant(globalVariants, "screen", "smallMobile")
+                        ? { gridTemplateColumns: "1fr" }
+                        : hasVariant(
+                              globalVariants,
+                              "screen",
+                              "tabletOrSmaller"
+                            )
+                          ? { gridTemplateColumns: "1fr 1fr" }
+                          : { gridTemplateColumns: "repeat(4,1fr)" }
+                    }
+                  >
+                    <div
+                      className={classNames("all", sty.freeBox__jtNk)}
+                      data-reveal={""}
+                    >
+                      <div
+                        className={classNames("all", sty.freeBox__bNuQp)}
+                        style={{
+                          font: '500 clamp(3.2rem,5.5vw,5rem)/1"Playfair Display",Georgia,serif'
+                        }}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__b7O2A
+                          )}
+                        >
+                          {"25"}
+                        </span>
+                      </div>
+                      <div className={classNames("all", sty.freeBox__zhjfy)}>
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__bhEmy,
+                            {
+                              [sty.spanglobal_locale_en__bhEmyShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Years in internal audit and risk"
+                            : "A\u00f1os en auditor\u00eda interna y riesgo"}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      className={classNames("all", sty.freeBox__gbzik)}
+                      data-delay={"1"}
+                      data-reveal={""}
+                      style={
+                        hasVariant(globalVariants, "screen", "smallMobile")
+                          ? { transitionDelay: "0.08s" }
+                          : hasVariant(globalVariants, "screen", "mobile")
+                            ? { transitionDelay: "0.08s" }
+                            : hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "tabletOrSmaller"
+                                )
+                              ? { transitionDelay: "0.08s" }
+                              : { transitionDelay: "0.08s" }
+                      }
+                    >
+                      <div
+                        className={classNames("all", sty.freeBox__qmcsS)}
+                        style={{
+                          font: '500 clamp(3.2rem,5.5vw,5rem)/1"Playfair Display",Georgia,serif'
+                        }}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__aK2Ps
+                          )}
+                        >
+                          {"6"}
+                        </span>
+                      </div>
+                      <div className={classNames("all", sty.freeBox___8W1At)}>
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__bGrkJ,
+                            {
+                              [sty.spanglobal_locale_en__bGrkJShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Certifications (CIA, CRMA, QAC and more)"
+                            : "Certificaciones (CIA, CRMA, QAC y m\u00e1s)"}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      className={classNames("all", sty.freeBox__dPl9B)}
+                      data-delay={"2"}
+                      data-reveal={""}
+                      style={
+                        hasVariant(globalVariants, "screen", "smallMobile")
+                          ? { transitionDelay: "0.16s" }
+                          : hasVariant(globalVariants, "screen", "mobile")
+                            ? { transitionDelay: "0.16s" }
+                            : hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "tabletOrSmaller"
+                                )
+                              ? { transitionDelay: "0.16s" }
+                              : { transitionDelay: "0.16s" }
+                      }
+                    >
+                      <div
+                        className={classNames("all", sty.freeBox__ncfG2)}
+                        style={{
+                          font: '500 clamp(3.2rem,5.5vw,5rem)/1"Playfair Display",Georgia,serif'
+                        }}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__ughJh
+                          )}
+                        >
+                          {"COSO"}
+                        </span>
+                      </div>
+                      <div className={classNames("all", sty.freeBox__bplM)}>
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__u4Mf3,
+                            {
+                              [sty.spanglobal_locale_en__u4Mf3ShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Reference framework for internal control and risk management"
+                            : "Marco de referencia para control interno y gesti\u00f3n de riesgos"}
+                        </span>
+                      </div>
+                    </div>
+                    <div
+                      className={classNames("all", sty.freeBox__mkc6S)}
+                      data-delay={"3"}
+                      data-reveal={""}
+                      style={
+                        hasVariant(globalVariants, "screen", "smallMobile")
+                          ? { transitionDelay: "0.24s" }
+                          : hasVariant(globalVariants, "screen", "mobile")
+                            ? { transitionDelay: "0.24s" }
+                            : hasVariant(
+                                  globalVariants,
+                                  "screen",
+                                  "tabletOrSmaller"
+                                )
+                              ? { transitionDelay: "0.24s" }
+                              : { transitionDelay: "0.24s" }
+                      }
+                    >
+                      <div
+                        className={classNames("all", sty.freeBox___7AVke)}
+                        style={{
+                          font: '500 clamp(3.2rem,5.5vw,5rem)/1"Playfair Display",Georgia,serif'
+                        }}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__xmNez
+                          )}
+                        >
+                          {"2"}
+                        </span>
+                      </div>
+                      <div className={classNames("all", sty.freeBox__u9G71)}>
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__p37Oe,
+                            {
+                              [sty.spanglobal_locale_en__p37OeShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Working languages, held to the same bar"
+                            : "Idiomas de trabajo, con la misma exigencia"}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section className={classNames("all", sty.section__x5N3C)}>
+                <div
+                  className={classNames("all", sty.freeBox___5U4MU)}
+                  style={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? { marginInline: "auto" }
+                      : { marginInline: "auto" }
+                  }
+                >
+                  <div
+                    className={classNames("all", sty.freeBox__uV7Sd)}
+                    data-reveal={""}
+                  >
+                    <span
+                      className={classNames(
+                        "all",
+                        "span",
+                        "span__e6ZxP",
+                        "__wab_text",
+                        sty.span__oVioB,
+                        {
+                          [sty.spanglobal_locale_en__oVioBShDm]: hasVariant(
+                            globalVariants,
+                            "locale",
+                            "en"
+                          )
+                        }
+                      )}
+                    >
+                      {hasVariant(globalVariants, "locale", "en")
+                        ? "Notes"
+                        : "Notas"}
+                    </span>
+                    <h2
+                      className={classNames(
+                        "all",
+                        "h2",
+                        "h2__e6ZxP",
+                        sty.h2___9ENj
+                      )}
+                      data-lang={"es"}
+                    >
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__ftVrE,
+                          {
+                            [sty.spanglobal_locale_en__ftVrEShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "What I write between projects"
+                          : "Lo que escribo entre proyectos"}
+                      </span>
+                    </h2>
+                  </div>
+                  <div
+                    className={classNames("all", sty.freeBox__miyFu)}
+                    data-delay={"1"}
+                    data-reveal={""}
+                    style={{ transitionDelay: "0.08s" }}
+                  >
+                    <PlasmicLink__
+                      className={classNames(
+                        "all",
+                        "a",
+                        "a__e6ZxP",
+                        sty.link___7XKvx
+                      )}
+                      href={"/perspectivas"}
+                      platform={"react"}
+                      style={
+                        triggers.hover_113141082
+                          ? { gridTemplateColumns: "175px 1fr 44px" }
+                          : hasVariant(globalVariants, "screen", "mobile")
+                            ? { gridTemplateColumns: "1fr 34px" }
+                            : { gridTemplateColumns: "175px 1fr 44px" }
+                      }
+                      data-plasmic-trigger-props={[triggerN113141082HoverProps]}
+                    >
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__pwV40,
+                          {
+                            [sty.spanglobal_locale_en__pwV40ShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        style={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? { gridColumn: "1" }
+                            : undefined
+                        }
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "2024 Standards"
+                          : "Normas 2024"}
+                      </span>
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__a5IPx,
+                          {
+                            [sty.spanglobal_locale_en__a5IPxShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        style={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? {
+                                font: '500 clamp(1.1rem,2vw,1.55rem)/1.3"Playfair Display",Georgia,serif',
+                                gridColumn: "1"
+                              }
+                            : {
+                                font: '500 clamp(1.1rem,2vw,1.55rem)/1.3"Playfair Display",Georgia,serif'
+                              }
+                        }
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "What actually changed moving from QAIP to the new quality model"
+                          : "Qu\u00e9 cambi\u00f3 de verdad al pasar de QAIP al nuevo modelo de calidad"}
+                      </span>
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__slSwn
+                        )}
+                        style={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? { gridArea: "1/2/3" }
+                            : undefined
+                        }
+                      >
+                        {"\u2192"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        "all",
+                        "a",
+                        "a__e6ZxP",
+                        sty.link__blAxk
+                      )}
+                      href={"/perspectivas"}
+                      platform={"react"}
+                      style={
+                        triggers.hover_113141083
+                          ? { gridTemplateColumns: "175px 1fr 44px" }
+                          : hasVariant(globalVariants, "screen", "mobile")
+                            ? { gridTemplateColumns: "1fr 34px" }
+                            : { gridTemplateColumns: "175px 1fr 44px" }
+                      }
+                      data-plasmic-trigger-props={[triggerN113141083HoverProps]}
+                    >
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__gDpi4,
+                          {
+                            [sty.spanglobal_locale_en__gDpi4ShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        style={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? { gridColumn: "1" }
+                            : undefined
+                        }
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "External assessment"
+                          : "Evaluaci\u00f3n externa"}
+                      </span>
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__lpnpj,
+                          {
+                            [sty.spanglobal_locale_en__lpnpjShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        style={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? {
+                                font: '500 clamp(1.1rem,2vw,1.55rem)/1.3"Playfair Display",Georgia,serif',
+                                gridColumn: "1"
+                              }
+                            : {
+                                font: '500 clamp(1.1rem,2vw,1.55rem)/1.3"Playfair Display",Georgia,serif'
+                              }
+                        }
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "How to reach an external assessment with nothing left to surprise you"
+                          : "C\u00f3mo llegar a una EEC sin que te sorprenda nada"}
+                      </span>
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__ygIq9
+                        )}
+                        style={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? { gridArea: "1/2/3" }
+                            : undefined
+                        }
+                      >
+                        {"\u2192"}
+                      </span>
+                    </PlasmicLink__>
+                    <PlasmicLink__
+                      className={classNames(
+                        "all",
+                        "a",
+                        "a__e6ZxP",
+                        sty.link__bdGvg
+                      )}
+                      href={"/perspectivas"}
+                      platform={"react"}
+                      style={
+                        triggers.hover_113141084
+                          ? { gridTemplateColumns: "175px 1fr 44px" }
+                          : hasVariant(globalVariants, "screen", "mobile")
+                            ? { gridTemplateColumns: "1fr 34px" }
+                            : { gridTemplateColumns: "175px 1fr 44px" }
+                      }
+                      data-plasmic-trigger-props={[triggerN113141084HoverProps]}
+                    >
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__ap17,
+                          {
+                            [sty.spanglobal_locale_en__ap17ShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        style={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? { gridColumn: "1" }
+                            : undefined
+                        }
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "Regulation"
+                          : "Regulaci\u00f3n"}
+                      </span>
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__m11Tr,
+                          {
+                            [sty.spanglobal_locale_en__m11TrShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        style={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? {
+                                font: '500 clamp(1.1rem,2vw,1.55rem)/1.3"Playfair Display",Georgia,serif',
+                                gridColumn: "1"
+                              }
+                            : {
+                                font: '500 clamp(1.1rem,2vw,1.55rem)/1.3"Playfair Display",Georgia,serif'
+                              }
+                        }
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "Reading Colombia's CE006/2025 from the auditor's chair"
+                          : "La CE006/2025 le\u00edda desde la silla del auditor"}
+                      </span>
+                      <span
+                        className={classNames(
+                          "all",
+                          "span",
+                          "span__e6ZxP",
+                          "__wab_text",
+                          sty.span__farrR
+                        )}
+                        style={
+                          hasVariant(globalVariants, "screen", "mobile")
+                            ? { gridArea: "1/2/3" }
+                            : undefined
+                        }
+                      >
+                        {"\u2192"}
+                      </span>
+                    </PlasmicLink__>
+                  </div>
+                </div>
+              </section>
+              <section className={classNames("all", sty.section__k28Z)}>
+                <div
+                  className={classNames("all", sty.freeBox__vyaJf)}
+                  style={
+                    hasVariant(globalVariants, "screen", "mobile")
+                      ? { marginInline: "auto" }
+                      : { marginInline: "auto" }
+                  }
+                >
+                  <div
+                    className={classNames("all", sty.freeBox___6Vc7U)}
+                    style={
+                      hasVariant(globalVariants, "screen", "mobile")
+                        ? { gridTemplateColumns: "1fr" }
+                        : { gridTemplateColumns: "0.86fr 1.14fr" }
+                    }
+                  >
+                    <div
+                      className={classNames("all", sty.freeBox___6Y4Qz)}
+                      data-reveal={""}
+                    >
+                      <div className={classNames("all", sty.freeBox__u6Fo)} />
+                      <h2
+                        className={classNames(
+                          "all",
+                          "h2",
+                          "h2__e6ZxP",
+                          sty.h2__nzFf6
+                        )}
+                        data-lang={"es"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span___3Fh1D,
+                            {
+                              [sty.spanglobal_locale_en___3Fh1DShDm]:
+                                hasVariant(globalVariants, "locale", "en")
+                            }
+                          )}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Have an assessment coming up?"
+                            : "\u00bfTiene una evaluaci\u00f3n a la vista?"}
+                        </span>
+                      </h2>
+                    </div>
+                    <div
+                      className={classNames("all", sty.freeBox__qXmyV)}
+                      data-delay={"1"}
+                      data-reveal={""}
+                      style={{ transitionDelay: "0.08s" }}
+                    >
+                      <p
+                        className={classNames(
+                          "all",
+                          "p",
+                          "p__e6ZxP",
+                          "__wab_text",
+                          sty.p__rrfMs,
+                          {
+                            [sty.pglobal_locale_en__rrfMsShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "Tell me where your function stands and what's worrying you. I'll tell you if I can help and how, no strings."
+                          : "Cu\u00e9nteme en qu\u00e9 est\u00e1 su funci\u00f3n y qu\u00e9 le preocupa. Le digo si puedo ayudar y c\u00f3mo, sin compromiso."}
+                      </p>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__jKco4
+                        )}
+                        href={"/nosotros#contacto"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__yv8Rz,
+                            {
+                              [sty.spanglobal_locale_en__yv8RzShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Write to me"
+                            : "Escr\u00edbame"}
+                        </span>
+                      </PlasmicLink__>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <footer
+                data-plasmic-name={"footer"}
+                data-plasmic-override={overrides.footer}
+                className={classNames("all", sty.footer)}
+              >
+                <div className={classNames("all", sty.freeBox__xthap)}>
+                  <div
+                    className={classNames("all", sty.freeBox__rh97J)}
+                    style={
+                      hasVariant(globalVariants, "screen", "mobile")
+                        ? { gridTemplateColumns: "1fr 1fr" }
+                        : hasVariant(
+                              globalVariants,
+                              "screen",
+                              "tabletOrSmaller"
+                            )
+                          ? { gridTemplateColumns: "1.5fr 1fr 1fr" }
+                          : { gridTemplateColumns: "1.5fr repeat(3,1fr)" }
+                    }
+                  >
+                    <div
+                      className={classNames("all", sty.freeBox___68TRc)}
+                      style={
+                        hasVariant(globalVariants, "screen", "mobile")
+                          ? { gridColumn: "1/-1" }
+                          : undefined
+                      }
+                    >
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__jgWwy
+                        )}
+                        href={"/"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            sty.span__gw97F
+                          )}
+                          style={{ placeItems: "center" }}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              "__wab_text",
+                              sty.span__bWvvx
+                            )}
+                            style={{
+                              font: '600 1.45rem/1"Playfair Display",Georgia,serif'
+                            }}
+                          >
+                            {"L"}
+                          </span>
+                        </span>
+                        <span
+                          aria-label={"Audit Risk Advisory"}
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            sty.span__wh0N3
+                          )}
+                        >
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              sty.span__wip04
+                            )}
+                          >
+                            <div
+                              className={classNames("all", sty.freeBox___8N5Dp)}
+                              style={{
+                                font: '700 .68rem/.68rem"Manrope",Arial,sans-serif'
+                              }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__wzFBk
+                                )}
+                              >
+                                {"A"}
+                              </span>
+                            </div>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i__i2Q3D
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__arq03
+                                )}
+                              >
+                                {"u"}
+                              </span>
+                            </i>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i___1N7N
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__h1R5Y
+                                )}
+                              >
+                                {"d"}
+                              </span>
+                            </i>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i__zkZui
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__uw4Ss
+                                )}
+                              >
+                                {"i"}
+                              </span>
+                            </i>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i__gnCzB
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__ogjrl
+                                )}
+                              >
+                                {"t"}
+                              </span>
+                            </i>
+                          </span>
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              sty.span__uumm7
+                            )}
+                          >
+                            <div
+                              className={classNames("all", sty.freeBox__myftk)}
+                              style={{
+                                font: '700 .68rem/.68rem"Manrope",Arial,sans-serif'
+                              }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span___3MPpZ
+                                )}
+                              >
+                                {"R"}
+                              </span>
+                            </div>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i__bEaQg
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__u7thF
+                                )}
+                              >
+                                {"i"}
+                              </span>
+                            </i>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i__wUrVn
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span___2PuKb
+                                )}
+                              >
+                                {"s"}
+                              </span>
+                            </i>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i__j67RM
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__tksv9
+                                )}
+                              >
+                                {"k"}
+                              </span>
+                            </i>
+                          </span>
+                          <span
+                            className={classNames(
+                              "all",
+                              "span",
+                              "span__e6ZxP",
+                              sty.span__o9MpL
+                            )}
+                          >
+                            <div
+                              className={classNames("all", sty.freeBox___91Oqr)}
+                              style={{
+                                font: '700 .68rem/.68rem"Manrope",Arial,sans-serif'
+                              }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__eM6Xm
+                                )}
+                              >
+                                {"A"}
+                              </span>
+                            </div>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i__jggOk
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__qmpfd
+                                )}
+                              >
+                                {"d"}
+                              </span>
+                            </i>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i__dgVct
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__lqXx4
+                                )}
+                              >
+                                {"v"}
+                              </span>
+                            </i>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i__tSmzz
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__valkf
+                                )}
+                              >
+                                {"i"}
+                              </span>
+                            </i>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i___5HraQ
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__itewN
+                                )}
+                              >
+                                {"s"}
+                              </span>
+                            </i>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i__jLns
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__hcy35
+                                )}
+                              >
+                                {"o"}
+                              </span>
+                            </i>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i__a4GlG
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__hx2M
+                                )}
+                              >
+                                {"r"}
+                              </span>
+                            </i>
+                            <i
+                              className={classNames(
+                                "all",
+                                "i",
+                                "i__e6ZxP",
+                                sty.i__yWvzX
+                              )}
+                              style={{ fontStyle: "normal" }}
+                            >
+                              <span
+                                className={classNames(
+                                  "all",
+                                  "span",
+                                  "span__e6ZxP",
+                                  "__wab_text",
+                                  sty.span__le7N8
+                                )}
+                              >
+                                {"y"}
+                              </span>
+                            </i>
+                          </span>
+                        </span>
+                      </PlasmicLink__>
+                      <p
+                        className={classNames(
+                          "all",
+                          "p",
+                          "p__e6ZxP",
+                          "__wab_text",
+                          sty.p__eEEku,
+                          {
+                            [sty.pglobal_locale_en__eEEkuShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "Internal audit, governance and risk. Based in Bogot\u00e1, with clients inside and outside Colombia."
+                          : "Auditor\u00eda interna, gobierno y riesgo. Bogot\u00e1, con clientes dentro y fuera de Colombia."}
+                      </p>
+                    </div>
+                    <div className={classNames("all", sty.freeBox___3Xj2L)}>
+                      <h4
+                        className={classNames(
+                          "all",
+                          "h4",
+                          "h4__e6ZxP",
+                          "__wab_text",
+                          sty.h4__nWbVd,
+                          {
+                            [sty.h4global_locale_en__nWbVdShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        style={{
+                          font: '700 .65rem/1"DM Sans",Arial,sans-serif'
+                        }}
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "Services"
+                          : "Servicios"}
+                      </h4>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__uoGgB
+                        )}
+                        href={"/servicios"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__aWvbR,
+                            {
+                              [sty.spanglobal_locale_en__aWvbRShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "External assessment"
+                            : "Evaluaci\u00f3n externa"}
+                        </span>
+                      </PlasmicLink__>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link___7UNEq
+                        )}
+                        href={"/servicios"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__f7SKk,
+                            {
+                              [sty.spanglobal_locale_en__f7SKkShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Gap analysis"
+                            : "Diagn\u00f3stico de brechas"}
+                        </span>
+                      </PlasmicLink__>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__ceAJ
+                        )}
+                        href={"/servicios"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__bFEdh
+                          )}
+                        >
+                          {"PAMC / QAIP"}
+                        </span>
+                      </PlasmicLink__>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__rcpFi
+                        )}
+                        href={"/servicios"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__kJ0RH,
+                            {
+                              [sty.spanglobal_locale_en__kJ0RHShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Training"
+                            : "Formaci\u00f3n"}
+                        </span>
+                      </PlasmicLink__>
+                    </div>
+                    <div className={classNames("all", sty.freeBox__u1A)}>
+                      <h4
+                        className={classNames(
+                          "all",
+                          "h4",
+                          "h4__e6ZxP",
+                          "__wab_text",
+                          sty.h4__hOlkc,
+                          {
+                            [sty.h4global_locale_en__hOlkcShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        style={{
+                          font: '700 .65rem/1"DM Sans",Arial,sans-serif'
+                        }}
+                      >
+                        {hasVariant(globalVariants, "locale", "en")
+                          ? "Firm"
+                          : "Firma"}
+                      </h4>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__vqjwc
+                        )}
+                        href={"/nosotros"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__f3C,
+                            {
+                              [sty.spanglobal_locale_en__f3CShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "About"
+                            : "Nosotros"}
+                        </span>
+                      </PlasmicLink__>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__zLrbq
+                        )}
+                        href={"/perspectivas"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__nl5Cl,
+                            {
+                              [sty.spanglobal_locale_en__nl5ClShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Internal Audit Perspectives"
+                            : "Perspectivas de auditor\u00eda interna"}
+                        </span>
+                      </PlasmicLink__>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__orwu8
+                        )}
+                        href={"/herramientas"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__ws3KZ,
+                            {
+                              [sty.spanglobal_locale_en__ws3KZShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Tools"
+                            : "Herramientas"}
+                        </span>
+                      </PlasmicLink__>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__l58R3
+                        )}
+                        href={"/nosotros#contacto"}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__upeKm,
+                            {
+                              [sty.spanglobal_locale_en__upeKmShDm]: hasVariant(
+                                globalVariants,
+                                "locale",
+                                "en"
+                              )
+                            }
+                          )}
+                          data-lang={"es"}
+                        >
+                          {hasVariant(globalVariants, "locale", "en")
+                            ? "Contact"
+                            : "Contacto"}
+                        </span>
+                      </PlasmicLink__>
+                    </div>
+                    <div
+                      className={classNames("all", sty.freeBox___9ICY, {
+                        [sty.freeBoxglobal_locale_en___9ICYShDm]: hasVariant(
+                          globalVariants,
+                          "locale",
+                          "en"
+                        )
+                      })}
+                    >
+                      <h4
+                        className={classNames(
+                          "all",
+                          "h4",
+                          "h4__e6ZxP",
+                          "__wab_text",
+                          sty.h4__xvrhw,
+                          {
+                            [sty.h4global_locale_en__xvrhwShDm]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "en"
+                            )
+                          }
+                        )}
+                        style={{
+                          font: '700 .65rem/1"DM Sans",Arial,sans-serif'
+                        }}
+                      >
+                        {"Acreditaciones"}
+                      </h4>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__jcSv
+                        )}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__fczxk
+                          )}
+                        >
+                          {"CIA \u00b7 CRMA \u00b7 QAC"}
+                        </span>
+                      </PlasmicLink__>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__mT9W3
+                        )}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__m4LAv
+                          )}
+                        >
+                          {"CCSA \u00b7 COSO IC"}
+                        </span>
+                      </PlasmicLink__>
+                      <PlasmicLink__
+                        className={classNames(
+                          "all",
+                          "a",
+                          "a__e6ZxP",
+                          sty.link__x0GNv
+                        )}
+                        platform={"react"}
+                      >
+                        <span
+                          className={classNames(
+                            "all",
+                            "span",
+                            "span__e6ZxP",
+                            "__wab_text",
+                            sty.span__rkTM
+                          )}
+                        >
+                          {"IIA Global"}
+                        </span>
+                      </PlasmicLink__>
+                    </div>
+                  </div>
+                  <div className={classNames("all", sty.freeBox__ahjfb)}>
+                    <span
+                      className={classNames(
+                        "all",
+                        "span",
+                        "span__e6ZxP",
+                        "__wab_text",
+                        sty.span__jyTqX
+                      )}
+                    >
+                      {"\u00a9 2026 Lara Audit Risk Advisory"}
+                    </span>
+                    <span
+                      className={classNames(
+                        "all",
+                        "span",
+                        "span__e6ZxP",
+                        "__wab_text",
+                        sty.span__ieGth
+                      )}
+                    >
+                      {"Bogot\u00e1, Colombia"}
+                    </span>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+        </div>
       </div>
     </React.Fragment>
   );
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "header", "h1", "aside", "footer"],
+  header: ["header"],
+  h1: ["h1"],
+  aside: ["aside"],
+  footer: ["footer"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -130,6 +3510,10 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    header: makeNodeComponent("header"),
+    h1: makeNodeComponent("h1"),
+    aside: makeNodeComponent("aside"),
+    footer: makeNodeComponent("footer"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
     internalArgProps: PlasmicHomepage__ArgProps,
