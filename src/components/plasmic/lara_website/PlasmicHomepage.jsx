@@ -80,22 +80,22 @@ function PlasmicHomepage__RenderFunc(props) {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const globalVariants = _useGlobalVariants();
-  const [isN42197539Hover, triggerN42197539HoverProps] = useTrigger(
+  const [isN75716319Hover, triggerN75716319HoverProps] = useTrigger(
     "useHover",
     {}
   );
-  const [isN42197540Hover, triggerN42197540HoverProps] = useTrigger(
+  const [isN75716320Hover, triggerN75716320HoverProps] = useTrigger(
     "useHover",
     {}
   );
-  const [isN42197541Hover, triggerN42197541HoverProps] = useTrigger(
+  const [isN75716321Hover, triggerN75716321HoverProps] = useTrigger(
     "useHover",
     {}
   );
   const triggers = {
-    hover_42197539: isN42197539Hover,
-    hover_42197540: isN42197540Hover,
-    hover_42197541: isN42197541Hover
+    hover_75716319: isN75716319Hover,
+    hover_75716320: isN75716320Hover,
+    hover_75716321: isN75716321Hover
   };
   const styleTokensClassNames = _useStyleTokens();
   return (
@@ -1538,7 +1538,7 @@ function PlasmicHomepage__RenderFunc(props) {
                           {hasVariant(globalVariants, "locale", "en")
                             ? "View services"
                             : hasVariant(globalVariants, "locale", "es")
-                              ? "Ver servicios \u00b7 prueba Cloudflare"
+                              ? "Ver servicios"
                               : "Ver servicios"}
                         </span>
                       </PlasmicLink__>
@@ -2230,13 +2230,13 @@ function PlasmicHomepage__RenderFunc(props) {
                       href={"/perspectivas"}
                       platform={"react"}
                       style={
-                        triggers.hover_42197539
+                        triggers.hover_75716319
                           ? { gridTemplateColumns: "175px 1fr 44px" }
                           : hasVariant(globalVariants, "screen", "mobile")
                             ? { gridTemplateColumns: "1fr 34px" }
                             : { gridTemplateColumns: "175px 1fr 44px" }
                       }
-                      data-plasmic-trigger-props={[triggerN42197539HoverProps]}
+                      data-plasmic-trigger-props={[triggerN75716319HoverProps]}
                     >
                       <span
                         className={classNames(
@@ -2320,13 +2320,13 @@ function PlasmicHomepage__RenderFunc(props) {
                       href={"/perspectivas"}
                       platform={"react"}
                       style={
-                        triggers.hover_42197540
+                        triggers.hover_75716320
                           ? { gridTemplateColumns: "175px 1fr 44px" }
                           : hasVariant(globalVariants, "screen", "mobile")
                             ? { gridTemplateColumns: "1fr 34px" }
                             : { gridTemplateColumns: "175px 1fr 44px" }
                       }
-                      data-plasmic-trigger-props={[triggerN42197540HoverProps]}
+                      data-plasmic-trigger-props={[triggerN75716320HoverProps]}
                     >
                       <span
                         className={classNames(
@@ -2410,13 +2410,13 @@ function PlasmicHomepage__RenderFunc(props) {
                       href={"/perspectivas"}
                       platform={"react"}
                       style={
-                        triggers.hover_42197541
+                        triggers.hover_75716321
                           ? { gridTemplateColumns: "175px 1fr 44px" }
                           : hasVariant(globalVariants, "screen", "mobile")
                             ? { gridTemplateColumns: "1fr 34px" }
                             : { gridTemplateColumns: "175px 1fr 44px" }
                       }
-                      data-plasmic-trigger-props={[triggerN42197541HoverProps]}
+                      data-plasmic-trigger-props={[triggerN75716321HoverProps]}
                     >
                       <span
                         className={classNames(
