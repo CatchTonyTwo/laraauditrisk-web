@@ -80,22 +80,22 @@ function PlasmicHomepage__RenderFunc(props) {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const globalVariants = _useGlobalVariants();
-  const [isN113141082Hover, triggerN113141082HoverProps] = useTrigger(
+  const [isN75716319Hover, triggerN75716319HoverProps] = useTrigger(
     "useHover",
     {}
   );
-  const [isN113141083Hover, triggerN113141083HoverProps] = useTrigger(
+  const [isN75716320Hover, triggerN75716320HoverProps] = useTrigger(
     "useHover",
     {}
   );
-  const [isN113141084Hover, triggerN113141084HoverProps] = useTrigger(
+  const [isN75716321Hover, triggerN75716321HoverProps] = useTrigger(
     "useHover",
     {}
   );
   const triggers = {
-    hover_113141082: isN113141082Hover,
-    hover_113141083: isN113141083Hover,
-    hover_113141084: isN113141084Hover
+    hover_75716319: isN75716319Hover,
+    hover_75716320: isN75716320Hover,
+    hover_75716321: isN75716321Hover
   };
   const styleTokensClassNames = _useStyleTokens();
   return (
@@ -1420,14 +1420,21 @@ function PlasmicHomepage__RenderFunc(props) {
                             globalVariants,
                             "locale",
                             "en"
+                          ),
+                          [sty.spanglobal_locale_es___2FtjYbUtU]: hasVariant(
+                            globalVariants,
+                            "locale",
+                            "es"
                           )
                         }
                       )}
                       data-reveal={""}
                     >
                       {hasVariant(globalVariants, "locale", "en")
-                        ? "Internal audit \u00b7 Governance \u00b7 Risk"
-                        : "Auditor\u00eda interna \u00b7 Gobierno ORGANIZACIONAL \u00b7 GESTI\u00d3N DE RiesgoS"}
+                        ? "Internal audit \u00b7 Organizational governance \u00b7 Risk management"
+                        : hasVariant(globalVariants, "locale", "es")
+                          ? "Auditor\u00eda interna \u00b7 Gobierno organizacional \u00b7 Gesti\u00f3n de riesgos"
+                          : "Auditor\u00eda interna \u00b7 Gobierno ORGANIZACIONAL \u00b7 GESTI\u00d3N DE RiesgoS"}
                     </span>
                     <div
                       className={classNames("all", sty.freeBox__b4R0H)}
@@ -1447,6 +1454,11 @@ function PlasmicHomepage__RenderFunc(props) {
                               globalVariants,
                               "locale",
                               "en"
+                            ),
+                            [sty.h1global_locale_es]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "es"
                             )
                           }
                         )}
@@ -1459,8 +1471,10 @@ function PlasmicHomepage__RenderFunc(props) {
                         }
                       >
                         {hasVariant(globalVariants, "locale", "en")
-                          ? "An audit function your Committee can stand behind."
-                          : "Una funci\u00f3n de auditor\u00eda que el Comit\u00e9 puede defender."}
+                          ? "Internal audit: the integrating force behind organizational governance and risk management."
+                          : hasVariant(globalVariants, "locale", "es")
+                            ? "Auditor\u00eda interna: el elemento integrador del gobierno organizacional y la gesti\u00f3n de riesgos."
+                            : "Una funci\u00f3n de auditor\u00eda que el Comit\u00e9 puede defender."}
                       </h1>
                       <p
                         className={classNames(
@@ -1514,14 +1528,18 @@ function PlasmicHomepage__RenderFunc(props) {
                                 globalVariants,
                                 "locale",
                                 "en"
-                              )
+                              ),
+                              [sty.spanglobal_locale_es__h40GiYbUtU]:
+                                hasVariant(globalVariants, "locale", "es")
                             }
                           )}
                           data-lang={"es"}
                         >
                           {hasVariant(globalVariants, "locale", "en")
                             ? "View services"
-                            : "Ver servicios"}
+                            : hasVariant(globalVariants, "locale", "es")
+                              ? "Ver servicios"
+                              : "Ver servicios"}
                         </span>
                       </PlasmicLink__>
                       <PlasmicLink__
@@ -1619,14 +1637,21 @@ function PlasmicHomepage__RenderFunc(props) {
                               globalVariants,
                               "locale",
                               "en"
+                            ),
+                            [sty.spanglobal_locale_es__hI35NYbUtU]: hasVariant(
+                              globalVariants,
+                              "locale",
+                              "es"
                             )
                           }
                         )}
                         data-lang={"es"}
                       >
                         {hasVariant(globalVariants, "locale", "en")
-                          ? "The Global Standards that changed the rules."
-                          : "Las Normas Globales que cambiaron la regla del juego."}
+                          ? "Publication year of the Global Internal Audit Standards."
+                          : hasVariant(globalVariants, "locale", "es")
+                            ? "A\u00f1o de publicaci\u00f3n de las Normas Globales de Auditor\u00eda Interna."
+                            : "Las Normas Globales que cambiaron la regla del juego."}
                       </span>
                     </div>
                     <div
@@ -1871,9 +1896,9 @@ function PlasmicHomepage__RenderFunc(props) {
                         )}
                       >
                         {hasVariant(globalVariants, "locale", "en")
-                          ? "A practice, not a template"
+                          ? "Experience, not a template"
                           : hasVariant(globalVariants, "locale", "es")
-                            ? "Una pr\u00e1ctica, no una plantilla"
+                            ? "Una experiencia, m\u00e1s que una plantilla"
                             : "Una pr\u00e1ctica, no una plantilla \u2014 PRUEBA PLASMIC"}
                       </span>
                     </h2>
@@ -2031,7 +2056,7 @@ function PlasmicHomepage__RenderFunc(props) {
                             sty.span__ughJh
                           )}
                         >
-                          {"COSO"}
+                          {"30+"}
                         </span>
                       </div>
                       <div className={classNames("all", sty.freeBox__bplM)}>
@@ -2047,14 +2072,18 @@ function PlasmicHomepage__RenderFunc(props) {
                                 globalVariants,
                                 "locale",
                                 "en"
-                              )
+                              ),
+                              [sty.spanglobal_locale_es__u4Mf3YbUtU]:
+                                hasVariant(globalVariants, "locale", "es")
                             }
                           )}
                           data-lang={"es"}
                         >
                           {hasVariant(globalVariants, "locale", "en")
-                            ? "Reference framework for internal control and risk management"
-                            : "Marco de referencia para control interno y gesti\u00f3n de riesgos"}
+                            ? "Quality assessments \u00b7 IIA Global Certified Quality Assessor (QAC)"
+                            : hasVariant(globalVariants, "locale", "es")
+                              ? "Evaluaciones de calidad \u00b7 Evaluador certificado por IIA Global (QAC)"
+                              : "Marco de referencia para control interno y gesti\u00f3n de riesgos"}
                         </span>
                       </div>
                     </div>
@@ -2201,13 +2230,13 @@ function PlasmicHomepage__RenderFunc(props) {
                       href={"/perspectivas"}
                       platform={"react"}
                       style={
-                        triggers.hover_113141082
+                        triggers.hover_75716319
                           ? { gridTemplateColumns: "175px 1fr 44px" }
                           : hasVariant(globalVariants, "screen", "mobile")
                             ? { gridTemplateColumns: "1fr 34px" }
                             : { gridTemplateColumns: "175px 1fr 44px" }
                       }
-                      data-plasmic-trigger-props={[triggerN113141082HoverProps]}
+                      data-plasmic-trigger-props={[triggerN75716319HoverProps]}
                     >
                       <span
                         className={classNames(
@@ -2291,13 +2320,13 @@ function PlasmicHomepage__RenderFunc(props) {
                       href={"/perspectivas"}
                       platform={"react"}
                       style={
-                        triggers.hover_113141083
+                        triggers.hover_75716320
                           ? { gridTemplateColumns: "175px 1fr 44px" }
                           : hasVariant(globalVariants, "screen", "mobile")
                             ? { gridTemplateColumns: "1fr 34px" }
                             : { gridTemplateColumns: "175px 1fr 44px" }
                       }
-                      data-plasmic-trigger-props={[triggerN113141083HoverProps]}
+                      data-plasmic-trigger-props={[triggerN75716320HoverProps]}
                     >
                       <span
                         className={classNames(
@@ -2381,13 +2410,13 @@ function PlasmicHomepage__RenderFunc(props) {
                       href={"/perspectivas"}
                       platform={"react"}
                       style={
-                        triggers.hover_113141084
+                        triggers.hover_75716321
                           ? { gridTemplateColumns: "175px 1fr 44px" }
                           : hasVariant(globalVariants, "screen", "mobile")
                             ? { gridTemplateColumns: "1fr 34px" }
                             : { gridTemplateColumns: "175px 1fr 44px" }
                       }
-                      data-plasmic-trigger-props={[triggerN113141084HoverProps]}
+                      data-plasmic-trigger-props={[triggerN75716321HoverProps]}
                     >
                       <span
                         className={classNames(
