@@ -80,22 +80,22 @@ function PlasmicHomepage__RenderFunc(props) {
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
   const globalVariants = _useGlobalVariants();
-  const [isN27593337Hover, triggerN27593337HoverProps] = useTrigger(
+  const [isN42197539Hover, triggerN42197539HoverProps] = useTrigger(
     "useHover",
     {}
   );
-  const [isN27593338Hover, triggerN27593338HoverProps] = useTrigger(
+  const [isN42197540Hover, triggerN42197540HoverProps] = useTrigger(
     "useHover",
     {}
   );
-  const [isN27593339Hover, triggerN27593339HoverProps] = useTrigger(
+  const [isN42197541Hover, triggerN42197541HoverProps] = useTrigger(
     "useHover",
     {}
   );
   const triggers = {
-    hover_27593337: isN27593337Hover,
-    hover_27593338: isN27593338Hover,
-    hover_27593339: isN27593339Hover
+    hover_42197539: isN42197539Hover,
+    hover_42197540: isN42197540Hover,
+    hover_42197541: isN42197541Hover
   };
   const styleTokensClassNames = _useStyleTokens();
   return (
@@ -1528,14 +1528,18 @@ function PlasmicHomepage__RenderFunc(props) {
                                 globalVariants,
                                 "locale",
                                 "en"
-                              )
+                              ),
+                              [sty.spanglobal_locale_es__h40GiYbUtU]:
+                                hasVariant(globalVariants, "locale", "es")
                             }
                           )}
                           data-lang={"es"}
                         >
                           {hasVariant(globalVariants, "locale", "en")
                             ? "View services"
-                            : "Ver servicios"}
+                            : hasVariant(globalVariants, "locale", "es")
+                              ? "Ver servicios \u00b7 prueba Cloudflare"
+                              : "Ver servicios"}
                         </span>
                       </PlasmicLink__>
                       <PlasmicLink__
@@ -2226,13 +2230,13 @@ function PlasmicHomepage__RenderFunc(props) {
                       href={"/perspectivas"}
                       platform={"react"}
                       style={
-                        triggers.hover_27593337
+                        triggers.hover_42197539
                           ? { gridTemplateColumns: "175px 1fr 44px" }
                           : hasVariant(globalVariants, "screen", "mobile")
                             ? { gridTemplateColumns: "1fr 34px" }
                             : { gridTemplateColumns: "175px 1fr 44px" }
                       }
-                      data-plasmic-trigger-props={[triggerN27593337HoverProps]}
+                      data-plasmic-trigger-props={[triggerN42197539HoverProps]}
                     >
                       <span
                         className={classNames(
@@ -2316,13 +2320,13 @@ function PlasmicHomepage__RenderFunc(props) {
                       href={"/perspectivas"}
                       platform={"react"}
                       style={
-                        triggers.hover_27593338
+                        triggers.hover_42197540
                           ? { gridTemplateColumns: "175px 1fr 44px" }
                           : hasVariant(globalVariants, "screen", "mobile")
                             ? { gridTemplateColumns: "1fr 34px" }
                             : { gridTemplateColumns: "175px 1fr 44px" }
                       }
-                      data-plasmic-trigger-props={[triggerN27593338HoverProps]}
+                      data-plasmic-trigger-props={[triggerN42197540HoverProps]}
                     >
                       <span
                         className={classNames(
@@ -2406,13 +2410,13 @@ function PlasmicHomepage__RenderFunc(props) {
                       href={"/perspectivas"}
                       platform={"react"}
                       style={
-                        triggers.hover_27593339
+                        triggers.hover_42197541
                           ? { gridTemplateColumns: "175px 1fr 44px" }
                           : hasVariant(globalVariants, "screen", "mobile")
                             ? { gridTemplateColumns: "1fr 34px" }
                             : { gridTemplateColumns: "175px 1fr 44px" }
                       }
-                      data-plasmic-trigger-props={[triggerN27593339HoverProps]}
+                      data-plasmic-trigger-props={[triggerN42197541HoverProps]}
                     >
                       <span
                         className={classNames(
