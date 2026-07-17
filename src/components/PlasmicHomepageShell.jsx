@@ -11,17 +11,18 @@ const englishText = new Map([
   ['Servicios', 'Services'],
   [
     'Seis formas concretas de trabajar la calidad de su función de auditoría.',
-    'Six concrete ways to strengthen the quality of your audit function.',
+    'Eight concrete ways to strengthen your internal audit function.',
   ],
   ['Ver todos', 'View all'],
   ['Aseguramiento', 'Assurance'],
   ['Evaluación externa', 'External assessment'],
-  ['Diagnóstico de brechas', 'Gap analysis'],
+  ['Diagnóstico de brechas', 'Gap analysis and remediation'],
   ['Talento', 'Talent'],
-  ['Banco de preguntas', 'Question bank'],
+  ['Banco de preguntas', 'Competency framework'],
   ['Formación', 'Training'],
-  ['Regulatorio', 'Regulatory'],
-  ['A medida', 'Tailored'],
+  ['Regulatorio', 'Implementation'],
+  ['CE006/2025', 'Maturity model'],
+  ['A medida', 'IIA Standards methodologies'],
   ['Perspectivas', 'Perspectives'],
   [
     'Notas sobre las Normas 2024, la calidad y la regulación, sin relleno.',
@@ -39,6 +40,18 @@ const englishText = new Map([
   ['Acreditaciones', 'Credentials'],
 ]);
 
+const spanishText = new Map([
+  [
+    'Seis formas concretas de trabajar la calidad de su función de auditoría.',
+    'Ocho formas concretas de fortalecer su función de auditoría interna.',
+  ],
+  ['Diagnóstico de brechas', 'Diagnóstico y cierre de brechas'],
+  ['Banco de preguntas', 'Marco de competencias'],
+  ['Regulatorio', 'Implementación'],
+  ['CE006/2025', 'Modelo de madurez'],
+  ['A medida', 'Metodologías NGAI'],
+]);
+
 function translateEnglishText(root) {
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
   let node = walker.nextNode();
@@ -50,6 +63,23 @@ function translateEnglishText(root) {
 
     if (translation) {
       node.nodeValue = value.replace(trimmed, translation);
+    }
+
+    node = walker.nextNode();
+  }
+}
+
+function replaceSpanishText(root) {
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  let node = walker.nextNode();
+
+  while (node) {
+    const value = node.nodeValue;
+    const trimmed = value?.trim();
+    const replacement = trimmed && spanishText.get(trimmed);
+
+    if (replacement) {
+      node.nodeValue = value.replace(trimmed, replacement);
     }
 
     node = walker.nextNode();
@@ -94,13 +124,17 @@ export default function PlasmicHomepageShell({ locale = 'es' }) {
 
     emphasizeCommittee(root, locale);
 
-    if (locale !== 'en') {
-      return;
-    }
+    const applyLocaleText = () => {
+      if (locale === 'en') {
+        translateEnglishText(root);
+      } else {
+        replaceSpanishText(root);
+      }
+    };
 
-    translateEnglishText(root);
+    applyLocaleText();
 
-    const observer = new MutationObserver(() => translateEnglishText(root));
+    const observer = new MutationObserver(applyLocaleText);
     observer.observe(root, { childList: true, subtree: true });
 
     return () => observer.disconnect();
@@ -121,6 +155,14 @@ export default function PlasmicHomepageShell({ locale = 'es' }) {
     }
 
     if (locale === 'en') {
+      const servicesLink = event.target.closest('a[href="/servicios"]');
+
+      if (servicesLink) {
+        event.preventDefault();
+        window.location.assign('/en/services');
+        return;
+      }
+
       const homeLink = event.target.closest('a[href="/"]');
 
       if (homeLink) {
