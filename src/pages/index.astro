@@ -1,14 +1,120 @@
 ---
-import PublishedPlasmicHomepage from '../components/PublishedPlasmicHomepage.astro';
-
-const title = 'Lara Audit Risk Advisory — Auditoría interna, gobierno y riesgo';
-const description =
-  'Evaluaciones externas de calidad, diagnósticos de brechas y programas de calidad para funciones de auditoría interna. Trabajo basado en las Normas Globales 2024 del IIA.';
+import Base from '../layouts/Base.astro';
+const title = "Lara Audit Risk Advisory — Auditoría interna, gobierno y riesgo";
+const description = "Evaluaciones externas de calidad, diagnósticos de brechas y programas de calidad para funciones de auditoría interna. Trabajo basado en las Normas Globales 2024 del IIA.";
 ---
+<Base title={title} description={description} active="inicio">
 
-<PublishedPlasmicHomepage
-  locale="es"
-  {title}
-  {description}
-  canonicalPath="/"
-/>
+<!-- HERO — asymmetric split -->
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-eyebrow" data-reveal><span data-lang="es">Auditoría interna · Gobierno Organizacional · Gestión de Riesgos</span><span data-lang="en">Internal audit · Organizational Governance · Risk Management</span></span>
+      <div data-lang="es" class="block">
+        <h1 data-reveal data-delay="1">Una función de auditoría que el <em>Comité</em> puede defender.</h1>
+        <p class="lead" data-reveal data-delay="2">Ayudo a Directores Ejecutivos de Auditoría a cerrar brechas frente a las Normas Globales 2024, armar su programa de calidad y llegar a una evaluación externa sin sorpresas. 25 años haciendo este trabajo.</p>
+      </div>
+      <div data-lang="en" class="block">
+        <h1 data-reveal data-delay="1">An audit function your <em>Committee</em> can stand behind.</h1>
+        <p class="lead" data-reveal data-delay="2">I help Chief Audit Executives close gaps against the 2024 Global Standards, build their quality program and walk into an external assessment without surprises. 25 years doing this work.</p>
+      </div>
+      <div class="hero-actions" data-reveal data-delay="3">
+        <a class="btn btn-gold" href="/servicios"><span data-lang="es">Ver servicios</span><span data-lang="en">View services</span></a>
+        <a class="btn btn-ghost" href="/nosotros#contacto"><span data-lang="es">Hablemos</span><span data-lang="en">Get in touch</span></a>
+      </div>
+    </div>
+    <aside class="hero-aside" data-reveal data-delay="2">
+      <div class="k">2024</div>
+      <div class="v"><span data-lang="es">Las Normas Globales que cambiaron la regla del juego.</span><span data-lang="en">The Global Standards that changed the rules.</span></div>
+      <div class="k">5 <span style="font-size:1.1rem;">años</span></div>
+      <div class="v"><span data-lang="es">El plazo máximo entre evaluaciones externas.</span><span data-lang="en">The maximum gap between external assessments.</span></div>
+    </aside>
+  </div>
+</section>
+
+<!-- EDITORIAL -->
+<section class="section section--paper">
+  <div class="container">
+    <div class="editorial">
+      <div class="editorial-left" data-reveal>
+        <hr class="rule">
+        <h2 data-lang="es" class="block">Qué cambió con las Normas 2024</h2>
+        <h2 data-lang="en" class="block">What the 2024 Standards changed</h2>
+      </div>
+      <div class="editorial-right" data-reveal data-delay="1">
+        <div data-lang="es" class="block">
+          <p>El marco anterior quedó atrás. Las Normas Globales 2024 piden más en aseguramiento de la calidad, independencia y evidencia. Para muchos equipos eso significa rehacer cómo documentan su trabajo, no solo ajustar un par de papeles.</p>
+          <p>Ahí es donde entro. Reviso dónde está su función hoy, le digo con claridad qué falta y le dejo un plan que su Comité de Auditoría pueda leer y respaldar. Sin atajos y sin informes que terminan en un cajón.</p>
+        </div>
+        <div data-lang="en" class="block">
+          <p>The old framework is gone. The 2024 Global Standards ask for more on quality assurance, independence and evidence. For a lot of teams that means rethinking how they document their work, not just tweaking a couple of papers.</p>
+          <p>That's where I come in. I look at where your function stands today, tell you plainly what's missing and leave you a plan your Audit Committee can read and back. No shortcuts, and no reports that end up in a drawer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<section class="section section--navy">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow"><span data-lang="es">En números</span><span data-lang="en">In numbers</span></span>
+      <h2 data-lang="es" class="block">Una práctica, no una plantilla</h2>
+      <h2 data-lang="en" class="block">A practice, not a template</h2>
+    </div>
+    <div class="stat-band">
+      <div class="stat" data-reveal><div class="num">25</div><div class="label"><span data-lang="es">Años en auditoría interna y riesgo</span><span data-lang="en">Years in internal audit and risk</span></div></div>
+      <div class="stat" data-reveal data-delay="1"><div class="num">6</div><div class="label"><span data-lang="es">Certificaciones (CIA, CRMA, QAC y más)</span><span data-lang="en">Certifications (CIA, CRMA, QAC and more)</span></div></div>
+      <div class="stat" data-reveal data-delay="2"><div class="num stat-word">COSO</div><div class="label"><span data-lang="es">Marco de referencia para control interno y gestión de riesgos</span><span data-lang="en">Reference framework for internal control and risk management</span></div></div>
+      <div class="stat" data-reveal data-delay="3"><div class="num">2</div><div class="label"><span data-lang="es">Idiomas de trabajo, con la misma exigencia</span><span data-lang="en">Working languages, held to the same bar</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS as editorial rows -->
+<section class="section section--cream">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow"><span data-lang="es">Notas</span><span data-lang="en">Notes</span></span>
+      <h2 data-lang="es" class="block">Lo que escribo entre proyectos</h2>
+      <h2 data-lang="en" class="block">What I write between projects</h2>
+    </div>
+    <div class="insight-list" data-reveal data-delay="1">
+      <a class="insight-row" href="/perspectivas">
+        <span class="ir-tag"><span data-lang="es">Normas 2024</span><span data-lang="en">2024 Standards</span></span>
+        <span class="ir-title"><span data-lang="es">Qué cambió de verdad al pasar de QAIP al nuevo modelo de calidad</span><span data-lang="en">What actually changed moving from QAIP to the new quality model</span></span>
+        <span class="ir-arrow">→</span>
+      </a>
+      <a class="insight-row" href="/perspectivas">
+        <span class="ir-tag"><span data-lang="es">Evaluación externa</span><span data-lang="en">External assessment</span></span>
+        <span class="ir-title"><span data-lang="es">Cómo llegar a una EEC sin que te sorprenda nada</span><span data-lang="en">How to reach an external assessment with nothing left to surprise you</span></span>
+        <span class="ir-arrow">→</span>
+      </a>
+      <a class="insight-row" href="/perspectivas">
+        <span class="ir-tag"><span data-lang="es">Regulación</span><span data-lang="en">Regulation</span></span>
+        <span class="ir-title"><span data-lang="es">La CE006/2025 leída desde la silla del auditor</span><span data-lang="en">Reading Colombia's CE006/2025 from the auditor's chair</span></span>
+        <span class="ir-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA — left aligned, not centered -->
+<section class="section section--navy">
+  <div class="container">
+    <div class="editorial">
+      <div class="editorial-left" data-reveal>
+        <hr class="rule rule--light">
+        <h2 data-lang="es" class="block">¿Tiene una evaluación a la vista?</h2>
+        <h2 data-lang="en" class="block">Have an assessment coming up?</h2>
+      </div>
+      <div class="editorial-right" data-reveal data-delay="1">
+        <p><span data-lang="es">Cuénteme en qué está su función y qué le preocupa. Le digo si puedo ayudar y cómo, sin compromiso.</span><span data-lang="en">Tell me where your function stands and what's worrying you. I'll tell you if I can help and how, no strings.</span></p>
+        <a class="btn btn-gold" href="/nosotros#contacto"><span data-lang="es">Escríbame</span><span data-lang="en">Write to me</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</Base>

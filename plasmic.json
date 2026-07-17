@@ -41,20 +41,6 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/"
-        },
-        {
-          "id": "RYTOJQ_lb1rR",
-          "name": "Services",
-          "type": "managed",
-          "projectId": "e6ZxPuHCfPgHyJvfyLEMAD",
-          "renderModuleFilePath": "plasmic/lara_website/PlasmicServices.jsx",
-          "importSpec": {
-            "modulePath": "Services.jsx"
-          },
-          "cssFilePath": "plasmic/lara_website/PlasmicServices.module.css",
-          "scheme": "blackbox",
-          "componentType": "page",
-          "path": "/servicios"
         }
       ],
       "icons": [],
